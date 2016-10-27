@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/Arquitectura/Procesadores/Primero/Primero.xst" -ofn "D:/Arquitectura/Procesadores/Primero/Primero.syr" 
+xst -intstyle ise -ifn "D:/Arquitectura/Procesadores/Primero/Primero.xst" -ofn "D:/Arquitectura/Procesadores/Primero/Primero.syr" 

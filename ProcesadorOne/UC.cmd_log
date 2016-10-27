@@ -1,0 +1,1 @@
+vhdtdtfi -prj Primero -o D:/Arquitectura/Procesadores/Primero/UC.vhi -module UC -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../../Componentes/UC/UC.vhd 

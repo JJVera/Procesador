@@ -1,0 +1,58 @@
+V3 35
+FL D:/Arquitectura/Componentes/ALU/ALU.vhd 2016/09/30.18:29:30 P.20131013
+EN work/ALU 1475772534 FL D:/Arquitectura/Componentes/ALU/ALU.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/ALU/Behavioral 1475772535 \
+      FL D:/Arquitectura/Componentes/ALU/ALU.vhd EN work/ALU 1475772534
+FL D:/Arquitectura/Componentes/IM/IM.vhd 2016/10/05.14:46:09 P.20131013
+EN work/IM 1475772524 FL D:/Arquitectura/Componentes/IM/IM.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB std/TEXTIO 1381692176
+AR work/IM/Behavioral 1475772525 \
+      FL D:/Arquitectura/Componentes/IM/IM.vhd EN work/IM 1475772524
+FL D:/Arquitectura/Componentes/MUX/MUX.vhd 2016/10/04.16:40:24 P.20131013
+EN work/MUX 1475772532 FL D:/Arquitectura/Componentes/MUX/MUX.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/MUX/Behavioral 1475772533 \
+      FL D:/Arquitectura/Componentes/MUX/MUX.vhd EN work/MUX 1475772532
+FL D:/Arquitectura/Componentes/PC/PC.vhd 2016/10/04.17:13:20 P.20131013
+EN work/PC 1475772520 FL D:/Arquitectura/Componentes/PC/PC.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/PC/Behavioral 1475772521 \
+      FL D:/Arquitectura/Componentes/PC/PC.vhd EN work/PC 1475772520
+FL D:/Arquitectura/Componentes/RegisterFile/RegisterFile.vhd 2016/10/05.15:24:15 P.20131013
+EN work/RegisterFile 1475772528 \
+      FL D:/Arquitectura/Componentes/RegisterFile/RegisterFile.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/RegisterFile/Behavioral 1475772529 \
+      FL D:/Arquitectura/Componentes/RegisterFile/RegisterFile.vhd \
+      EN work/RegisterFile 1475772528
+FL D:/Arquitectura/Componentes/SEU/SEU.vhd 2016/10/04.17:00:29 P.20131013
+EN work/SEU 1475772530 FL D:/Arquitectura/Componentes/SEU/SEU.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/SEU/Behavioral 1475772531 \
+      FL D:/Arquitectura/Componentes/SEU/SEU.vhd EN work/SEU 1475772530
+FL D:/Arquitectura/Componentes/Sumador/Sumador.vhd 2016/10/05.15:25:11 P.20131013
+EN work/Sumador 1475772522 FL D:/Arquitectura/Componentes/Sumador/Sumador.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Sumador/arq_Sumador 1475772523 \
+      FL D:/Arquitectura/Componentes/Sumador/Sumador.vhd EN work/Sumador 1475772522
+FL D:/Arquitectura/Componentes/UC/UC.vhd 2016/10/04.23:08:08 P.20131013
+EN work/UC 1475772526 FL D:/Arquitectura/Componentes/UC/UC.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/UC/Behavioral 1475772527 \
+      FL D:/Arquitectura/Componentes/UC/UC.vhd EN work/UC 1475772526
+FL D:/Arquitectura/Procesadores/Primero/Primero.vhd 2016/10/06.11:48:26 P.20131013
+EN work/Primero 1475772536 FL D:/Arquitectura/Procesadores/Primero/Primero.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Primero/Behavioral 1475772537 \
+      FL D:/Arquitectura/Procesadores/Primero/Primero.vhd EN work/Primero 1475772536 \
+      CP PC CP Sumador CP IM CP UC CP RegisterFile CP SEU CP MUX CP ALU

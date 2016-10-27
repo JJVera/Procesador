@@ -1,0 +1,1177 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: Primero.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Primero.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Primero"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Primero
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Arquitectura/Componentes/PC/PC.vhd" in Library work.
+Architecture behavioral of Entity pc is up to date.
+Compiling vhdl file "D:/Arquitectura/Componentes/Sumador/Sumador.vhd" in Library work.
+Architecture arq_sumador of Entity sumador is up to date.
+Compiling vhdl file "D:/Arquitectura/Componentes/IM/IM.vhd" in Library work.
+Architecture behavioral of Entity im is up to date.
+Compiling vhdl file "D:/Arquitectura/Componentes/UC/UC.vhd" in Library work.
+Architecture behavioral of Entity uc is up to date.
+Compiling vhdl file "D:/Arquitectura/Componentes/RegisterFile/RegisterFile.vhd" in Library work.
+Architecture behavioral of Entity registerfile is up to date.
+Compiling vhdl file "D:/Arquitectura/Componentes/SEU/SEU.vhd" in Library work.
+Architecture behavioral of Entity seu is up to date.
+Compiling vhdl file "D:/Arquitectura/Componentes/MUX/MUX.vhd" in Library work.
+Architecture behavioral of Entity mux is up to date.
+Compiling vhdl file "D:/Arquitectura/Componentes/ALU/ALU.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "D:/Arquitectura/Procesadores/Primero/Primero.vhd" in Library work.
+Architecture behavioral of Entity primero is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Primero> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <PC> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Sumador> in library <work> (architecture <arq_sumador>).
+
+Analyzing hierarchy for entity <IM> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <UC> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <RegisterFile> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SEU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MUX> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Primero> in library <work> (Architecture <behavioral>).
+Entity <Primero> analyzed. Unit <Primero> generated.
+
+Analyzing Entity <PC> in library <work> (Architecture <behavioral>).
+Entity <PC> analyzed. Unit <PC> generated.
+
+Analyzing Entity <Sumador> in library <work> (Architecture <arq_sumador>).
+Entity <Sumador> analyzed. Unit <Sumador> generated.
+
+Analyzing Entity <IM> in library <work> (Architecture <behavioral>).
+Entity <IM> analyzed. Unit <IM> generated.
+
+Analyzing Entity <UC> in library <work> (Architecture <behavioral>).
+Entity <UC> analyzed. Unit <UC> generated.
+
+Analyzing Entity <RegisterFile> in library <work> (Architecture <behavioral>).
+Entity <RegisterFile> analyzed. Unit <RegisterFile> generated.
+
+Analyzing Entity <SEU> in library <work> (Architecture <behavioral>).
+Entity <SEU> analyzed. Unit <SEU> generated.
+
+Analyzing Entity <MUX> in library <work> (Architecture <behavioral>).
+Entity <MUX> analyzed. Unit <MUX> generated.
+
+Analyzing Entity <ALU> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "D:/Arquitectura/Componentes/ALU/ALU.vhd" line 54: Mux is complete : default of case is discarded
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <registros<0>> in unit <RegisterFile> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <PC>.
+    Related source file is "D:/Arquitectura/Componentes/PC/PC.vhd".
+    Found 32-bit register for signal <Dataout>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <PC> synthesized.
+
+
+Synthesizing Unit <Sumador>.
+    Related source file is "D:/Arquitectura/Componentes/Sumador/Sumador.vhd".
+    Found 32-bit adder for signal <S>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Sumador> synthesized.
+
+
+Synthesizing Unit <IM>.
+    Related source file is "D:/Arquitectura/Componentes/IM/IM.vhd".
+WARNING:Xst:647 - Input <A<31:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1781 - Signal <instructions> is used but never assigned. Tied to default value.
+    Found 64x32-bit ROM for signal <S>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <IM> synthesized.
+
+
+Synthesizing Unit <UC>.
+    Related source file is "D:/Arquitectura/Componentes/UC/UC.vhd".
+Unit <UC> synthesized.
+
+
+Synthesizing Unit <RegisterFile>.
+    Related source file is "D:/Arquitectura/Componentes/RegisterFile/RegisterFile.vhd".
+    Found 32-bit register for signal <crs1>.
+    Found 32-bit register for signal <crs2>.
+    Found 32-bit 32-to-1 multiplexer for signal <$varindex0000> created at line 79.
+    Found 32-bit 32-to-1 multiplexer for signal <$varindex0001> created at line 80.
+    Found 992-bit register for signal <registros<31:1>>.
+INFO:Xst:738 - HDL ADVISOR - 992 flip-flops were inferred for signal <registros>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 1056 D-type flip-flop(s).
+	inferred  64 Multiplexer(s).
+Unit <RegisterFile> synthesized.
+
+
+Synthesizing Unit <SEU>.
+    Related source file is "D:/Arquitectura/Componentes/SEU/SEU.vhd".
+Unit <SEU> synthesized.
+
+
+Synthesizing Unit <MUX>.
+    Related source file is "D:/Arquitectura/Componentes/MUX/MUX.vhd".
+Unit <MUX> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "D:/Arquitectura/Componentes/ALU/ALU.vhd".
+    Found 32-bit 8-to-1 multiplexer for signal <Result>.
+    Found 32-bit addsub for signal <Result$addsub0000>.
+    Found 32-bit xor2 for signal <Result$xor0000> created at line 51.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <Primero>.
+    Related source file is "D:/Arquitectura/Procesadores/Primero/Primero.vhd".
+Unit <Primero> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 64x32-bit ROM                                         : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 1
+ 32-bit addsub                                         : 1
+# Registers                                            : 35
+ 32-bit register                                       : 35
+# Multiplexers                                         : 3
+ 32-bit 32-to-1 multiplexer                            : 2
+ 32-bit 8-to-1 multiplexer                             : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <Dataout_6> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_7> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_8> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_9> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_10> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_11> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_12> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_13> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_14> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_15> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_16> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_17> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_18> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_19> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_20> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_21> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_22> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_23> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_24> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_25> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_26> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_27> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_28> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_29> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_30> of sequential type is unconnected in block <Pc0>.
+WARNING:Xst:2677 - Node <Dataout_31> of sequential type is unconnected in block <Pc0>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 64x32-bit ROM                                         : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 1
+ 32-bit addsub                                         : 1
+# Registers                                            : 1120
+ Flip-Flops                                            : 1120
+# Multiplexers                                         : 65
+ 1-bit 32-to-1 multiplexer                             : 64
+ 32-bit 8-to-1 multiplexer                             : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Primero> ...
+
+Optimizing unit <PC> ...
+
+Optimizing unit <RegisterFile> ...
+
+Optimizing unit <ALU> ...
+WARNING:Xst:1293 - FF/Latch <Inst_RegisterFile/registros_23_0> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_1> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_2> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_3> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_4> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_5> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_6> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_7> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_8> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_9> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_10> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_11> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_12> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_13> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_14> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_15> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_16> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_17> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_18> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_19> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_20> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_21> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_22> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_23> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_24> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_25> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_26> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_27> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_28> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_29> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_30> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_23_31> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_0> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_1> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_2> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_3> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_4> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_5> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_6> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_7> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_8> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_9> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_10> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_11> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_12> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_13> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_14> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_15> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_16> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_17> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_18> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_19> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_20> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_21> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_22> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_23> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_24> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_25> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_26> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_27> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_28> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_29> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_30> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_17_31> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_0> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_1> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_2> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_3> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_4> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_5> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_6> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_7> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_8> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_9> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_10> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_11> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_12> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_13> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_14> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_15> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_16> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_17> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_18> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_19> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_20> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_21> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_22> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_23> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_24> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_25> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_26> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_27> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_28> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_29> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_30> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_24_31> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_0> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_1> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_2> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_3> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_4> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_5> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_6> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_7> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_8> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_9> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_10> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_11> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_12> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_13> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_14> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_15> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_16> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_17> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_18> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_19> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_20> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_21> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_22> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_23> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_24> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_25> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_26> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_27> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_28> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_29> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_30> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_18_31> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_0> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_1> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_2> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_3> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_4> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_5> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_6> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_7> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_8> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_9> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_10> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_11> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_12> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_13> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_14> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_15> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_16> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_17> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_18> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_19> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_20> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_21> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_22> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_23> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_24> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_25> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_26> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_27> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_28> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_29> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_30> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_21_31> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_0> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_1> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_2> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_3> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_4> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_5> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_6> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_7> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_8> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_9> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_10> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_11> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_12> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_13> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_14> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_15> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_16> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_17> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_18> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_19> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_20> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_21> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_22> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_23> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_24> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_25> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_26> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_27> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_28> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_29> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_30> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_20_31> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_0> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_1> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_2> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_3> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_4> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_5> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_6> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_7> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_8> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_9> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_10> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_11> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_12> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_13> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_14> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_15> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_16> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_17> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_18> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_19> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_20> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_21> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_22> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_23> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_24> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_25> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_26> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_27> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_28> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_29> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_30> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_22_31> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_0> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_1> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_2> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_3> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_4> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_5> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_6> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_7> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_8> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_9> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_10> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_11> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_12> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_13> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_14> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_15> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_16> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_17> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_18> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_19> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_20> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_21> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_22> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_23> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_24> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_25> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_26> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_27> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_28> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_29> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_30> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_16_31> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_0> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_1> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_2> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_3> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_4> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_5> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_6> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_7> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_8> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_9> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_10> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_11> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_12> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_13> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_14> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_15> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_16> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_17> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_18> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_19> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_20> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_21> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_22> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_23> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_24> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_25> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_26> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_27> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_28> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_29> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_30> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_27_31> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_0> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_1> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_2> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_3> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_4> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_5> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_6> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_7> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_8> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_9> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_10> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_11> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_12> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_13> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_14> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_15> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_16> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_17> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_18> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_19> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_20> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_21> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_22> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_23> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_24> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_25> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_26> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_27> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_28> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_29> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_30> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_26_31> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_0> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_1> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_2> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_3> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_4> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_5> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_6> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_7> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_8> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_9> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_10> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_11> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_12> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_13> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_14> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_15> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_16> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_17> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_18> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_19> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_20> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_21> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_22> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_23> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_24> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_25> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_26> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_27> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_28> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_29> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_30> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_29_31> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_0> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_1> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_2> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_3> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_4> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_5> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_6> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_7> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_8> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_9> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_10> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_11> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_12> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_13> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_14> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_15> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_16> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_17> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_18> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_19> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_20> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_21> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_22> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_23> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_24> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_25> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_26> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_27> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_28> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_29> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_30> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_28_31> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_0> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_1> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_2> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_3> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_4> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_5> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_6> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_7> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_8> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_9> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_10> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_11> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_12> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_13> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_14> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_15> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_16> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_17> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_18> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_19> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_20> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_21> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_22> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_23> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_24> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_25> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_26> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_27> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_28> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_29> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_30> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_30_31> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_0> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_1> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_2> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_3> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_4> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_5> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_6> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_7> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_8> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_9> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_10> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_11> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_12> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_13> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_14> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_15> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_16> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_17> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_18> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_19> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_20> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_21> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_22> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_23> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_24> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_25> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_26> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_27> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_28> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_29> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_30> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_19_31> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_0> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_1> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_2> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_3> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_4> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_5> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_6> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_7> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_8> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_9> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_10> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_11> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_12> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_13> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_14> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_15> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_16> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_17> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_18> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_19> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_20> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_21> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_22> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_23> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_24> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_25> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_26> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_27> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_28> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_29> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_30> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_31_31> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_0> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_1> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_2> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_3> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_4> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_5> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_6> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_7> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_8> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_9> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_10> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_11> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_12> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_13> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_14> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_15> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_16> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_17> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_18> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_19> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_20> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_21> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_22> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_23> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_24> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_25> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_26> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_27> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_28> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_29> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_30> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Inst_RegisterFile/registros_25_31> has a constant value of 0 in block <Primero>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Pc0/Dataout_31> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_30> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_29> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_28> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_27> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_26> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_25> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_24> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_23> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_22> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_21> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_20> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_19> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_18> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_17> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_16> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_15> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_14> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_13> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_12> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_11> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_10> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_9> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_8> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_7> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <Pc0/Dataout_6> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_31> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_30> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_29> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_28> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_27> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_26> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_25> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_24> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_23> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_22> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_21> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_20> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_19> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_18> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_17> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_16> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_15> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_14> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_13> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_12> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_11> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_10> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_9> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_8> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_7> of sequential type is unconnected in block <Primero>.
+WARNING:Xst:2677 - Node <nPc/Dataout_6> of sequential type is unconnected in block <Primero>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Primero, actual ratio is 15.
+FlipFlop Pc0/Dataout_0 has been replicated 2 time(s)
+FlipFlop Pc0/Dataout_2 has been replicated 2 time(s)
+FlipFlop Pc0/Dataout_3 has been replicated 1 time(s)
+FlipFlop Pc0/Dataout_4 has been replicated 1 time(s)
+FlipFlop Pc0/Dataout_5 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 563
+ Flip-Flops                                            : 563
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Primero.ngr
+Top Level Output File Name         : Primero
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 34
+
+Cell Usage :
+# BELS                             : 1282
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 5
+#      LUT2                        : 35
+#      LUT2_L                      : 1
+#      LUT3                        : 297
+#      LUT3_D                      : 25
+#      LUT3_L                      : 10
+#      LUT4                        : 302
+#      LUT4_D                      : 6
+#      LUT4_L                      : 10
+#      MUXCY                       : 36
+#      MUXF5                       : 257
+#      MUXF6                       : 128
+#      MUXF7                       : 64
+#      MUXF8                       : 64
+#      VCC                         : 1
+#      XORCY                       : 38
+# FlipFlops/Latches                : 563
+#      FDC                         : 19
+#      FDCE                        : 480
+#      FDE                         : 64
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 33
+#      IBUF                        : 1
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      665  out of   4656    14%  
+ Number of Slice Flip Flops:            563  out of   9312     6%  
+ Number of 4 input LUTs:                693  out of   9312     7%  
+ Number of IOs:                          34
+ Number of bonded IOBs:                  34  out of    232    14%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk                                | BUFGP                  | 563   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+Reset                              | IBUF                   | 499   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 10.650ns (Maximum Frequency: 93.900MHz)
+   Minimum input arrival time before clock: 5.159ns
+   Maximum output required time after clock: 14.648ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 10.650ns (frequency: 93.900MHz)
+  Total number of paths / destination ports: 216303 / 1043
+-------------------------------------------------------------------------
+Delay:               10.650ns (Levels of Logic = 34)
+  Source:            Pc0/Dataout_5_1 (FF)
+  Destination:       Inst_RegisterFile/registros_9_31 (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: Pc0/Dataout_5_1 to Inst_RegisterFile/registros_9_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.591   0.595  Pc0/Dataout_5_1 (Pc0/Dataout_5_1)
+     LUT2:I0->O            4   0.704   0.591  Inst_IM/Mrom_S212111 (N15)
+     LUT4:I3->O           68   0.704   1.278  SalidaIM<10>1 (SalidaIM<10>)
+     LUT4:I3->O            2   0.704   0.482  Inst_MUX/S<3> (SalidaMux<3>)
+     LUT3:I2->O            1   0.704   0.000  Inst_ALU/Maddsub_Result_addsub0000_lut<3> (Inst_ALU/Maddsub_Result_addsub0000_lut<3>)
+     MUXCY:S->O            1   0.464   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<3> (Inst_ALU/Maddsub_Result_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<4> (Inst_ALU/Maddsub_Result_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<5> (Inst_ALU/Maddsub_Result_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<6> (Inst_ALU/Maddsub_Result_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<7> (Inst_ALU/Maddsub_Result_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<8> (Inst_ALU/Maddsub_Result_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<9> (Inst_ALU/Maddsub_Result_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<10> (Inst_ALU/Maddsub_Result_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<11> (Inst_ALU/Maddsub_Result_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<12> (Inst_ALU/Maddsub_Result_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<13> (Inst_ALU/Maddsub_Result_addsub0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<14> (Inst_ALU/Maddsub_Result_addsub0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<15> (Inst_ALU/Maddsub_Result_addsub0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<16> (Inst_ALU/Maddsub_Result_addsub0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<17> (Inst_ALU/Maddsub_Result_addsub0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<18> (Inst_ALU/Maddsub_Result_addsub0000_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<19> (Inst_ALU/Maddsub_Result_addsub0000_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<20> (Inst_ALU/Maddsub_Result_addsub0000_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<21> (Inst_ALU/Maddsub_Result_addsub0000_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<22> (Inst_ALU/Maddsub_Result_addsub0000_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<23> (Inst_ALU/Maddsub_Result_addsub0000_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<24> (Inst_ALU/Maddsub_Result_addsub0000_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<25> (Inst_ALU/Maddsub_Result_addsub0000_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<26> (Inst_ALU/Maddsub_Result_addsub0000_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<27> (Inst_ALU/Maddsub_Result_addsub0000_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<28> (Inst_ALU/Maddsub_Result_addsub0000_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<29> (Inst_ALU/Maddsub_Result_addsub0000_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<30> (Inst_ALU/Maddsub_Result_addsub0000_cy<30>)
+     XORCY:CI->O           1   0.804   0.424  Inst_ALU/Maddsub_Result_addsub0000_xor<31> (Inst_ALU/Result_addsub0000<31>)
+     LUT4:I3->O           16   0.704   0.000  Inst_ALU/Mmux_Result_4_f5_231 (AluResult_31_OBUF)
+     FDCE:D                    0.308          Inst_RegisterFile/registros_2_31
+    ----------------------------------------
+    Total                     10.650ns (7.280ns logic, 3.370ns route)
+                                       (68.4% logic, 31.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              5.159ns (Levels of Logic = 2)
+  Source:            Reset (PAD)
+  Destination:       Inst_RegisterFile/crs2_31 (FF)
+  Destination Clock: Clk rising
+
+  Data Path: Reset to Inst_RegisterFile/crs2_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           500   1.218   1.410  Reset_IBUF (Reset_IBUF)
+     INV:I->O             64   0.704   1.272  Inst_RegisterFile/Rst_inv1_INV_0 (Inst_RegisterFile/Rst_inv)
+     FDE:CE                    0.555          Inst_RegisterFile/crs1_0
+    ----------------------------------------
+    Total                      5.159ns (2.477ns logic, 2.682ns route)
+                                       (48.0% logic, 52.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 12067 / 32
+-------------------------------------------------------------------------
+Offset:              14.648ns (Levels of Logic = 35)
+  Source:            Pc0/Dataout_5_1 (FF)
+  Destination:       AluResult<31> (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: Pc0/Dataout_5_1 to AluResult<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.591   0.595  Pc0/Dataout_5_1 (Pc0/Dataout_5_1)
+     LUT2:I0->O            4   0.704   0.591  Inst_IM/Mrom_S212111 (N15)
+     LUT4:I3->O           68   0.704   1.278  SalidaIM<10>1 (SalidaIM<10>)
+     LUT4:I3->O            2   0.704   0.482  Inst_MUX/S<3> (SalidaMux<3>)
+     LUT3:I2->O            1   0.704   0.000  Inst_ALU/Maddsub_Result_addsub0000_lut<3> (Inst_ALU/Maddsub_Result_addsub0000_lut<3>)
+     MUXCY:S->O            1   0.464   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<3> (Inst_ALU/Maddsub_Result_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<4> (Inst_ALU/Maddsub_Result_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<5> (Inst_ALU/Maddsub_Result_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<6> (Inst_ALU/Maddsub_Result_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<7> (Inst_ALU/Maddsub_Result_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<8> (Inst_ALU/Maddsub_Result_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<9> (Inst_ALU/Maddsub_Result_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<10> (Inst_ALU/Maddsub_Result_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<11> (Inst_ALU/Maddsub_Result_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<12> (Inst_ALU/Maddsub_Result_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<13> (Inst_ALU/Maddsub_Result_addsub0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<14> (Inst_ALU/Maddsub_Result_addsub0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<15> (Inst_ALU/Maddsub_Result_addsub0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<16> (Inst_ALU/Maddsub_Result_addsub0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<17> (Inst_ALU/Maddsub_Result_addsub0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<18> (Inst_ALU/Maddsub_Result_addsub0000_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<19> (Inst_ALU/Maddsub_Result_addsub0000_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<20> (Inst_ALU/Maddsub_Result_addsub0000_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<21> (Inst_ALU/Maddsub_Result_addsub0000_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<22> (Inst_ALU/Maddsub_Result_addsub0000_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<23> (Inst_ALU/Maddsub_Result_addsub0000_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<24> (Inst_ALU/Maddsub_Result_addsub0000_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<25> (Inst_ALU/Maddsub_Result_addsub0000_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<26> (Inst_ALU/Maddsub_Result_addsub0000_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<27> (Inst_ALU/Maddsub_Result_addsub0000_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<28> (Inst_ALU/Maddsub_Result_addsub0000_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<29> (Inst_ALU/Maddsub_Result_addsub0000_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  Inst_ALU/Maddsub_Result_addsub0000_cy<30> (Inst_ALU/Maddsub_Result_addsub0000_cy<30>)
+     XORCY:CI->O           1   0.804   0.424  Inst_ALU/Maddsub_Result_addsub0000_xor<31> (Inst_ALU/Result_addsub0000<31>)
+     LUT4:I3->O           16   0.704   1.034  Inst_ALU/Mmux_Result_4_f5_231 (AluResult_31_OBUF)
+     OBUF:I->O                 3.272          AluResult_31_OBUF (AluResult<31>)
+    ----------------------------------------
+    Total                     14.648ns (10.244ns logic, 4.404ns route)
+                                       (69.9% logic, 30.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 39.00 secs
+Total CPU time to Xst completion: 38.73 secs
+ 
+--> 
+
+Total memory usage is 387852 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  592 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

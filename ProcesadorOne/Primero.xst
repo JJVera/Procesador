@@ -1,0 +1,5 @@
+set -tmpdir "D:/Arquitectura/Procesadores/Primero/xst/projnav.tmp"
+set -xsthdpdir "D:/Arquitectura/Procesadores/Primero/xst"
+elaborate
+-ifn Primero.prj
+-ifmt mixed

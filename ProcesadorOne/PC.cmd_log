@@ -1,0 +1,2 @@
+vhdtdtfi -prj Primero -o D:/Arquitectura/Procesadores/Primero/PC.vhi -module PC -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../../Componentes/PC/PC.vhd 
+vhdtdtfi -prj Primero -o D:/Arquitectura/Procesadores/Primero/PC.vhi -module PC -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../../Componentes/PC/PC.vhd 

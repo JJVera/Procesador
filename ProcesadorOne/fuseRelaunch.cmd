@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/utp.CRIE/Desktop/Arquitectura/Procesadores/Primero/tb_Primero_isim_beh.exe" -prj "C:/Users/utp.CRIE/Desktop/Arquitectura/Procesadores/Primero/tb_Primero_beh.prj" "work.tb_Primero" 
