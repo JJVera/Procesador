@@ -1,0 +1,8 @@
+V3 4
+FL C:/Users/JArango/Desktop/Arquitectura/PC/PC.vhd 2016/10/04.17:10:20 P.20131013
+FL D:/Arquitectura/Componentes/PC/PC.vhd 2016/10/04.17:13:20 P.20131013
+EN work/PC 1475641036 FL D:/Arquitectura/Componentes/PC/PC.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/PC/Behavioral 1475641037 \
+      FL D:/Arquitectura/Componentes/PC/PC.vhd EN work/PC 1475641036

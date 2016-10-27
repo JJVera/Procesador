@@ -1,0 +1,2110 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.33 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.33 secs
+ 
+--> Reading design: RegisterFile.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "RegisterFile.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "RegisterFile"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : RegisterFile
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Arquitectura/Componentes/RegisterFileMod/RegisterFile.vhd" in Library work.
+Architecture behavioral of Entity registerfile is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <RegisterFile> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <RegisterFile> in library <work> (Architecture <behavioral>).
+WARNING:Xst:790 - "D:/Arquitectura/Componentes/RegisterFileMod/RegisterFile.vhd" line 82: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "D:/Arquitectura/Componentes/RegisterFileMod/RegisterFile.vhd" line 84: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "D:/Arquitectura/Componentes/RegisterFileMod/RegisterFile.vhd" line 85: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:819 - "D:/Arquitectura/Componentes/RegisterFileMod/RegisterFile.vhd" line 63: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <registros>
+Entity <RegisterFile> analyzed. Unit <RegisterFile> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <registros<0>> in unit <RegisterFile> has a constant value of 00000000000000000000000000000000 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <RegisterFile>.
+    Related source file is "D:/Arquitectura/Componentes/RegisterFileMod/RegisterFile.vhd".
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_10>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_11>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_12>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_13>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_14>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_20>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_15>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_21>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_8>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_16>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_22>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_9>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_17>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_23>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_18>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_24>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_19>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_30>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_25>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_31>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_26>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_32>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_27>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_33>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_28>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_34>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_29>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_35>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_36>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_37>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_38>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <registros_39>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit 40-to-1 multiplexer for signal <$varindex0000> created at line 84.
+    Found 32-bit 40-to-1 multiplexer for signal <$varindex0001> created at line 85.
+    Summary:
+	inferred  64 Multiplexer(s).
+Unit <RegisterFile> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 39
+ 32-bit latch                                          : 39
+# Multiplexers                                         : 2
+ 32-bit 40-to-1 multiplexer                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 39
+ 32-bit latch                                          : 39
+# Multiplexers                                         : 2
+ 32-bit 40-to-1 multiplexer                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <RegisterFile> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block RegisterFile, actual ratio is 29.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : RegisterFile.ngr
+Top Level Output File Name         : RegisterFile
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 115
+
+Cell Usage :
+# BELS                             : 2544
+#      BUF                         : 4
+#      LUT2                        : 64
+#      LUT3                        : 1221
+#      LUT4                        : 103
+#      MUXF5                       : 640
+#      MUXF6                       : 320
+#      MUXF7                       : 128
+#      MUXF8                       : 64
+# FlipFlops/Latches                : 1248
+#      LDC                         : 1248
+# Clock Buffers                    : 24
+#      BUFG                        : 24
+# IO Buffers                       : 115
+#      IBUF                        : 51
+#      OBUF                        : 64
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                     1358  out of   4656    29%  
+ Number of Slice Flip Flops:           1248  out of   9312    13%  
+ Number of 4 input LUTs:               1388  out of   9312    14%  
+ Number of IOs:                         115
+ Number of bonded IOBs:                 115  out of    232    49%  
+ Number of GCLKs:                        24  out of     24   100%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------------------+------------------------+-------+
+Clock Signal                                        | Clock buffer(FF name)  | Load  |
+----------------------------------------------------+------------------------+-------+
+registros_39_cmp_eq00001(registros_39_cmp_eq00001:O)| BUFG(*)(registros_39_0)| 32    |
+registros_38_cmp_eq00001(registros_38_cmp_eq00001:O)| BUFG(*)(registros_38_0)| 32    |
+registros_37_cmp_eq00001(registros_37_cmp_eq00001:O)| BUFG(*)(registros_37_0)| 32    |
+registros_36_cmp_eq00001(registros_36_cmp_eq00001:O)| BUFG(*)(registros_36_0)| 32    |
+registros_35_cmp_eq00001(registros_35_cmp_eq00001:O)| BUFG(*)(registros_35_0)| 32    |
+registros_29_cmp_eq00001(registros_29_cmp_eq00001:O)| BUFG(*)(registros_29_0)| 32    |
+registros_34_cmp_eq00001(registros_34_cmp_eq00001:O)| BUFG(*)(registros_34_0)| 32    |
+registros_28_cmp_eq00001(registros_28_cmp_eq00001:O)| BUFG(*)(registros_28_0)| 32    |
+registros_33_cmp_eq00001(registros_33_cmp_eq00001:O)| BUFG(*)(registros_33_0)| 32    |
+registros_27_cmp_eq00001(registros_27_cmp_eq00001:O)| BUFG(*)(registros_27_0)| 32    |
+registros_32_cmp_eq00001(registros_32_cmp_eq00001:O)| BUFG(*)(registros_32_0)| 32    |
+registros_26_cmp_eq00001(registros_26_cmp_eq00001:O)| BUFG(*)(registros_26_0)| 32    |
+registros_31_cmp_eq00001(registros_31_cmp_eq00001:O)| BUFG(*)(registros_31_0)| 32    |
+registros_25_cmp_eq00001(registros_25_cmp_eq00001:O)| BUFG(*)(registros_25_0)| 32    |
+registros_30_cmp_eq00001(registros_30_cmp_eq00001:O)| BUFG(*)(registros_30_0)| 32    |
+registros_19_cmp_eq00001(registros_19_cmp_eq00001:O)| BUFG(*)(registros_19_0)| 32    |
+registros_24_cmp_eq00001(registros_24_cmp_eq00001:O)| BUFG(*)(registros_24_0)| 32    |
+registros_18_cmp_eq00001(registros_18_cmp_eq00001:O)| BUFG(*)(registros_18_0)| 32    |
+registros_23_cmp_eq00001(registros_23_cmp_eq00001:O)| BUFG(*)(registros_23_0)| 32    |
+registros_17_cmp_eq00001(registros_17_cmp_eq00001:O)| BUFG(*)(registros_17_0)| 32    |
+registros_9_cmp_eq00001(registros_9_cmp_eq00001:O)  | BUFG(*)(registros_9_0) | 32    |
+registros_22_cmp_eq00001(registros_22_cmp_eq00001:O)| BUFG(*)(registros_22_0)| 32    |
+registros_16_cmp_eq00001(registros_16_cmp_eq00001:O)| BUFG(*)(registros_16_0)| 32    |
+registros_8_cmp_eq00001(registros_8_cmp_eq00001:O)  | BUFG(*)(registros_8_0) | 32    |
+registros_21_cmp_eq0000(registros_21_cmp_eq00001:O) | NONE(*)(registros_21_0)| 32    |
+registros_15_cmp_eq0000(registros_15_cmp_eq00001:O) | NONE(*)(registros_15_0)| 32    |
+registros_7_cmp_eq0000(registros_7_cmp_eq00001:O)   | NONE(*)(registros_7_0) | 32    |
+registros_20_cmp_eq0000(registros_20_cmp_eq00001:O) | NONE(*)(registros_20_0)| 32    |
+registros_6_cmp_eq0000(registros_6_cmp_eq00001:O)   | NONE(*)(registros_6_0) | 32    |
+registros_14_cmp_eq0000(registros_14_cmp_eq00001:O) | NONE(*)(registros_14_0)| 32    |
+registros_5_cmp_eq0000(registros_5_cmp_eq00001:O)   | NONE(*)(registros_5_0) | 32    |
+registros_13_cmp_eq0000(registros_13_cmp_eq00001:O) | NONE(*)(registros_13_0)| 32    |
+registros_4_cmp_eq0000(registros_4_cmp_eq00001:O)   | NONE(*)(registros_4_0) | 32    |
+registros_12_cmp_eq0000(registros_12_cmp_eq00001:O) | NONE(*)(registros_12_0)| 32    |
+registros_3_cmp_eq0000(registros_3_cmp_eq00001:O)   | NONE(*)(registros_3_0) | 32    |
+registros_11_cmp_eq0000(registros_11_cmp_eq00001:O) | NONE(*)(registros_11_0)| 32    |
+registros_2_cmp_eq0000(registros_2_cmp_eq00001:O)   | NONE(*)(registros_2_0) | 32    |
+registros_10_cmp_eq0000(registros_10_cmp_eq00001:O) | NONE(*)(registros_10_0)| 32    |
+registros_1_cmp_eq0000(registros_1_cmp_eq00001:O)   | NONE(*)(registros_1_0) | 32    |
+----------------------------------------------------+------------------------+-------+
+(*) These 39 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+Rst_IBUF_1(Rst_IBUF_1:O)           | NONE(registros_33_18)  | 438   |
+Rst_IBUF_2(Rst_IBUF_2:O)           | NONE(registros_20_27)  | 438   |
+Rst                                | IBUF                   | 372   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 2.790ns
+   Maximum output required time after clock: 8.706ns
+   Maximum combinational path delay: 12.171ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_39_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_39_0 (LATCH)
+  Destination Clock: registros_39_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_39_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_39_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_38_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_38_0 (LATCH)
+  Destination Clock: registros_38_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_38_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_38_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_37_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_37_0 (LATCH)
+  Destination Clock: registros_37_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_37_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_37_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_36_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_36_0 (LATCH)
+  Destination Clock: registros_36_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_36_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_36_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_35_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_35_0 (LATCH)
+  Destination Clock: registros_35_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_35_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_35_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_29_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_29_0 (LATCH)
+  Destination Clock: registros_29_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_29_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_29_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_34_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_34_0 (LATCH)
+  Destination Clock: registros_34_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_34_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_34_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_28_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_28_0 (LATCH)
+  Destination Clock: registros_28_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_28_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_28_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_33_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_33_0 (LATCH)
+  Destination Clock: registros_33_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_33_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_33_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_27_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_27_0 (LATCH)
+  Destination Clock: registros_27_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_27_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_27_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_32_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_32_0 (LATCH)
+  Destination Clock: registros_32_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_32_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_32_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_26_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_26_0 (LATCH)
+  Destination Clock: registros_26_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_26_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_26_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_31_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_31_0 (LATCH)
+  Destination Clock: registros_31_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_31_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_31_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_25_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_25_0 (LATCH)
+  Destination Clock: registros_25_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_25_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_25_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_30_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_30_0 (LATCH)
+  Destination Clock: registros_30_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_30_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_30_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_19_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_19_0 (LATCH)
+  Destination Clock: registros_19_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_19_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_19_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_24_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_24_0 (LATCH)
+  Destination Clock: registros_24_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_24_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_24_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_18_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_18_0 (LATCH)
+  Destination Clock: registros_18_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_18_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_18_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_23_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_23_0 (LATCH)
+  Destination Clock: registros_23_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_23_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_23_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_17_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_17_0 (LATCH)
+  Destination Clock: registros_17_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_17_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_17_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_9_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_9_0 (LATCH)
+  Destination Clock: registros_9_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_9_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_9_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_22_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_22_0 (LATCH)
+  Destination Clock: registros_22_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_22_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_22_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_16_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_16_0 (LATCH)
+  Destination Clock: registros_16_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_16_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_16_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_8_cmp_eq00001'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_8_0 (LATCH)
+  Destination Clock: registros_8_cmp_eq00001 falling
+
+  Data Path: AluResult<0> to registros_8_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_8_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_21_cmp_eq0000'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_21_0 (LATCH)
+  Destination Clock: registros_21_cmp_eq0000 falling
+
+  Data Path: AluResult<0> to registros_21_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_21_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_15_cmp_eq0000'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_15_0 (LATCH)
+  Destination Clock: registros_15_cmp_eq0000 falling
+
+  Data Path: AluResult<0> to registros_15_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_15_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_7_cmp_eq0000'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_7_0 (LATCH)
+  Destination Clock: registros_7_cmp_eq0000 falling
+
+  Data Path: AluResult<0> to registros_7_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_7_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_20_cmp_eq0000'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_20_0 (LATCH)
+  Destination Clock: registros_20_cmp_eq0000 falling
+
+  Data Path: AluResult<0> to registros_20_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_20_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_6_cmp_eq0000'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_6_0 (LATCH)
+  Destination Clock: registros_6_cmp_eq0000 falling
+
+  Data Path: AluResult<0> to registros_6_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_6_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_14_cmp_eq0000'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_14_0 (LATCH)
+  Destination Clock: registros_14_cmp_eq0000 falling
+
+  Data Path: AluResult<0> to registros_14_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_14_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_5_cmp_eq0000'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_5_0 (LATCH)
+  Destination Clock: registros_5_cmp_eq0000 falling
+
+  Data Path: AluResult<0> to registros_5_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_5_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_13_cmp_eq0000'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_13_0 (LATCH)
+  Destination Clock: registros_13_cmp_eq0000 falling
+
+  Data Path: AluResult<0> to registros_13_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_13_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_4_cmp_eq0000'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_4_0 (LATCH)
+  Destination Clock: registros_4_cmp_eq0000 falling
+
+  Data Path: AluResult<0> to registros_4_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_4_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_12_cmp_eq0000'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_12_0 (LATCH)
+  Destination Clock: registros_12_cmp_eq0000 falling
+
+  Data Path: AluResult<0> to registros_12_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_12_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_3_cmp_eq0000'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_3_0 (LATCH)
+  Destination Clock: registros_3_cmp_eq0000 falling
+
+  Data Path: AluResult<0> to registros_3_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_3_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_11_cmp_eq0000'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_11_0 (LATCH)
+  Destination Clock: registros_11_cmp_eq0000 falling
+
+  Data Path: AluResult<0> to registros_11_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_11_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_2_cmp_eq0000'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_2_0 (LATCH)
+  Destination Clock: registros_2_cmp_eq0000 falling
+
+  Data Path: AluResult<0> to registros_2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_2_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_10_cmp_eq0000'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_10_0 (LATCH)
+  Destination Clock: registros_10_cmp_eq0000 falling
+
+  Data Path: AluResult<0> to registros_10_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_10_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'registros_1_cmp_eq0000'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              2.790ns (Levels of Logic = 1)
+  Source:            AluResult<0> (PAD)
+  Destination:       registros_1_0 (LATCH)
+  Destination Clock: registros_1_cmp_eq0000 falling
+
+  Data Path: AluResult<0> to registros_1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            39   1.218   1.264  AluResult_0_IBUF (AluResult_0_IBUF)
+     LDC:D                     0.308          registros_1_0
+    ----------------------------------------
+    Total                      2.790ns (1.526ns logic, 1.264ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_32_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              7.599ns (Levels of Logic = 5)
+  Source:            registros_32_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_32_cmp_eq00001 falling
+
+  Data Path: registros_32_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.526  registros_32_31 (registros_32_31)
+     LUT3:I1->O            1   0.704   0.000  Mmux__varindex0000_10124 (Mmux__varindex0000_10124)
+     MUXF5:I0->O           1   0.321   0.000  Mmux__varindex0000_8_f5_48 (Mmux__varindex0000_8_f549)
+     MUXF6:I0->O           1   0.521   0.455  Mmux__varindex0000_6_f6_23 (Mmux__varindex0000_6_f624)
+     LUT4:I2->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      7.599ns (6.198ns logic, 1.401ns route)
+                                       (81.6% logic, 18.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_33_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              7.555ns (Levels of Logic = 5)
+  Source:            registros_33_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_33_cmp_eq00001 falling
+
+  Data Path: registros_33_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.482  registros_33_31 (registros_33_31)
+     LUT3:I2->O            1   0.704   0.000  Mmux__varindex0000_10124 (Mmux__varindex0000_10124)
+     MUXF5:I0->O           1   0.321   0.000  Mmux__varindex0000_8_f5_48 (Mmux__varindex0000_8_f549)
+     MUXF6:I0->O           1   0.521   0.455  Mmux__varindex0000_6_f6_23 (Mmux__varindex0000_6_f624)
+     LUT4:I2->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      7.555ns (6.198ns logic, 1.357ns route)
+                                       (82.0% logic, 18.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_34_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              7.599ns (Levels of Logic = 5)
+  Source:            registros_34_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_34_cmp_eq00001 falling
+
+  Data Path: registros_34_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.526  registros_34_31 (registros_34_31)
+     LUT3:I1->O            1   0.704   0.000  Mmux__varindex0000_974 (Mmux__varindex0000_974)
+     MUXF5:I1->O           1   0.321   0.000  Mmux__varindex0000_8_f5_48 (Mmux__varindex0000_8_f549)
+     MUXF6:I0->O           1   0.521   0.455  Mmux__varindex0000_6_f6_23 (Mmux__varindex0000_6_f624)
+     LUT4:I2->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      7.599ns (6.198ns logic, 1.401ns route)
+                                       (81.6% logic, 18.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_35_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              7.555ns (Levels of Logic = 5)
+  Source:            registros_35_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_35_cmp_eq00001 falling
+
+  Data Path: registros_35_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.482  registros_35_31 (registros_35_31)
+     LUT3:I2->O            1   0.704   0.000  Mmux__varindex0000_974 (Mmux__varindex0000_974)
+     MUXF5:I1->O           1   0.321   0.000  Mmux__varindex0000_8_f5_48 (Mmux__varindex0000_8_f549)
+     MUXF6:I0->O           1   0.521   0.455  Mmux__varindex0000_6_f6_23 (Mmux__varindex0000_6_f624)
+     LUT4:I2->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      7.555ns (6.198ns logic, 1.357ns route)
+                                       (82.0% logic, 18.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_36_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              7.599ns (Levels of Logic = 5)
+  Source:            registros_36_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_36_cmp_eq00001 falling
+
+  Data Path: registros_36_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.526  registros_36_31 (registros_36_31)
+     LUT3:I1->O            1   0.704   0.000  Mmux__varindex0000_973 (Mmux__varindex0000_973)
+     MUXF5:I0->O           1   0.321   0.000  Mmux__varindex0000_7_f5_23 (Mmux__varindex0000_7_f524)
+     MUXF6:I1->O           1   0.521   0.455  Mmux__varindex0000_6_f6_23 (Mmux__varindex0000_6_f624)
+     LUT4:I2->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      7.599ns (6.198ns logic, 1.401ns route)
+                                       (81.6% logic, 18.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_37_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              7.555ns (Levels of Logic = 5)
+  Source:            registros_37_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_37_cmp_eq00001 falling
+
+  Data Path: registros_37_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.482  registros_37_31 (registros_37_31)
+     LUT3:I2->O            1   0.704   0.000  Mmux__varindex0000_973 (Mmux__varindex0000_973)
+     MUXF5:I0->O           1   0.321   0.000  Mmux__varindex0000_7_f5_23 (Mmux__varindex0000_7_f524)
+     MUXF6:I1->O           1   0.521   0.455  Mmux__varindex0000_6_f6_23 (Mmux__varindex0000_6_f624)
+     LUT4:I2->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      7.555ns (6.198ns logic, 1.357ns route)
+                                       (82.0% logic, 18.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_38_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              7.599ns (Levels of Logic = 5)
+  Source:            registros_38_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_38_cmp_eq00001 falling
+
+  Data Path: registros_38_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.526  registros_38_31 (registros_38_31)
+     LUT3:I1->O            1   0.704   0.000  Mmux__varindex0000_824 (Mmux__varindex0000_824)
+     MUXF5:I1->O           1   0.321   0.000  Mmux__varindex0000_7_f5_23 (Mmux__varindex0000_7_f524)
+     MUXF6:I1->O           1   0.521   0.455  Mmux__varindex0000_6_f6_23 (Mmux__varindex0000_6_f624)
+     LUT4:I2->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      7.599ns (6.198ns logic, 1.401ns route)
+                                       (81.6% logic, 18.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_39_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              7.555ns (Levels of Logic = 5)
+  Source:            registros_39_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_39_cmp_eq00001 falling
+
+  Data Path: registros_39_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.482  registros_39_31 (registros_39_31)
+     LUT3:I2->O            1   0.704   0.000  Mmux__varindex0000_824 (Mmux__varindex0000_824)
+     MUXF5:I1->O           1   0.321   0.000  Mmux__varindex0000_7_f5_23 (Mmux__varindex0000_7_f524)
+     MUXF6:I1->O           1   0.521   0.455  Mmux__varindex0000_6_f6_23 (Mmux__varindex0000_6_f624)
+     LUT4:I2->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      7.555ns (6.198ns logic, 1.357ns route)
+                                       (82.0% logic, 18.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_8_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.706ns (Levels of Logic = 7)
+  Source:            registros_8_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_8_cmp_eq00001 falling
+
+  Data Path: registros_8_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.622  registros_8_31 (registros_8_31)
+     LUT2:I0->O            1   0.704   0.000  Mmux__varindex0000_1324 (Mmux__varindex0000_1324)
+     MUXF5:I0->O           1   0.321   0.000  Mmux__varindex0000_11_f5_23 (Mmux__varindex0000_11_f524)
+     MUXF6:I0->O           1   0.521   0.000  Mmux__varindex0000_9_f6_23 (Mmux__varindex0000_9_f624)
+     MUXF7:I0->O           1   0.521   0.000  Mmux__varindex0000_7_f7_23 (Mmux__varindex0000_7_f724)
+     MUXF8:I0->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.706ns (7.240ns logic, 1.466ns route)
+                                       (83.2% logic, 16.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_16_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.610ns (Levels of Logic = 7)
+  Source:            registros_16_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_16_cmp_eq00001 falling
+
+  Data Path: registros_16_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.526  registros_16_31 (registros_16_31)
+     LUT3:I1->O            1   0.704   0.000  Mmux__varindex0000_1299 (Mmux__varindex0000_1299)
+     MUXF5:I1->O           1   0.321   0.000  Mmux__varindex0000_11_f5_23 (Mmux__varindex0000_11_f524)
+     MUXF6:I0->O           1   0.521   0.000  Mmux__varindex0000_9_f6_23 (Mmux__varindex0000_9_f624)
+     MUXF7:I0->O           1   0.521   0.000  Mmux__varindex0000_7_f7_23 (Mmux__varindex0000_7_f724)
+     MUXF8:I0->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.610ns (7.240ns logic, 1.370ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_24_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.566ns (Levels of Logic = 7)
+  Source:            registros_24_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_24_cmp_eq00001 falling
+
+  Data Path: registros_24_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.482  registros_24_31 (registros_24_31)
+     LUT3:I2->O            1   0.704   0.000  Mmux__varindex0000_1299 (Mmux__varindex0000_1299)
+     MUXF5:I1->O           1   0.321   0.000  Mmux__varindex0000_11_f5_23 (Mmux__varindex0000_11_f524)
+     MUXF6:I0->O           1   0.521   0.000  Mmux__varindex0000_9_f6_23 (Mmux__varindex0000_9_f624)
+     MUXF7:I0->O           1   0.521   0.000  Mmux__varindex0000_7_f7_23 (Mmux__varindex0000_7_f724)
+     MUXF8:I0->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.566ns (7.240ns logic, 1.326ns route)
+                                       (84.5% logic, 15.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_1_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.610ns (Levels of Logic = 7)
+  Source:            registros_1_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_1_cmp_eq0000 falling
+
+  Data Path: registros_1_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.526  registros_1_31 (registros_1_31)
+     LUT3:I1->O            1   0.704   0.000  Mmux__varindex0000_1298 (Mmux__varindex0000_1298)
+     MUXF5:I0->O           1   0.321   0.000  Mmux__varindex0000_10_f5_73 (Mmux__varindex0000_10_f574)
+     MUXF6:I1->O           1   0.521   0.000  Mmux__varindex0000_9_f6_23 (Mmux__varindex0000_9_f624)
+     MUXF7:I0->O           1   0.521   0.000  Mmux__varindex0000_7_f7_23 (Mmux__varindex0000_7_f724)
+     MUXF8:I0->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.610ns (7.240ns logic, 1.370ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_9_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.566ns (Levels of Logic = 7)
+  Source:            registros_9_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_9_cmp_eq00001 falling
+
+  Data Path: registros_9_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.482  registros_9_31 (registros_9_31)
+     LUT3:I2->O            1   0.704   0.000  Mmux__varindex0000_1298 (Mmux__varindex0000_1298)
+     MUXF5:I0->O           1   0.321   0.000  Mmux__varindex0000_10_f5_73 (Mmux__varindex0000_10_f574)
+     MUXF6:I1->O           1   0.521   0.000  Mmux__varindex0000_9_f6_23 (Mmux__varindex0000_9_f624)
+     MUXF7:I0->O           1   0.521   0.000  Mmux__varindex0000_7_f7_23 (Mmux__varindex0000_7_f724)
+     MUXF8:I0->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.566ns (7.240ns logic, 1.326ns route)
+                                       (84.5% logic, 15.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_17_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.610ns (Levels of Logic = 7)
+  Source:            registros_17_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_17_cmp_eq00001 falling
+
+  Data Path: registros_17_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.526  registros_17_31 (registros_17_31)
+     LUT3:I1->O            1   0.704   0.000  Mmux__varindex0000_11149 (Mmux__varindex0000_11149)
+     MUXF5:I1->O           1   0.321   0.000  Mmux__varindex0000_10_f5_73 (Mmux__varindex0000_10_f574)
+     MUXF6:I1->O           1   0.521   0.000  Mmux__varindex0000_9_f6_23 (Mmux__varindex0000_9_f624)
+     MUXF7:I0->O           1   0.521   0.000  Mmux__varindex0000_7_f7_23 (Mmux__varindex0000_7_f724)
+     MUXF8:I0->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.610ns (7.240ns logic, 1.370ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_25_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.566ns (Levels of Logic = 7)
+  Source:            registros_25_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_25_cmp_eq00001 falling
+
+  Data Path: registros_25_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.482  registros_25_31 (registros_25_31)
+     LUT3:I2->O            1   0.704   0.000  Mmux__varindex0000_11149 (Mmux__varindex0000_11149)
+     MUXF5:I1->O           1   0.321   0.000  Mmux__varindex0000_10_f5_73 (Mmux__varindex0000_10_f574)
+     MUXF6:I1->O           1   0.521   0.000  Mmux__varindex0000_9_f6_23 (Mmux__varindex0000_9_f624)
+     MUXF7:I0->O           1   0.521   0.000  Mmux__varindex0000_7_f7_23 (Mmux__varindex0000_7_f724)
+     MUXF8:I0->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.566ns (7.240ns logic, 1.326ns route)
+                                       (84.5% logic, 15.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_2_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.610ns (Levels of Logic = 7)
+  Source:            registros_2_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_2_cmp_eq0000 falling
+
+  Data Path: registros_2_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.526  registros_2_31 (registros_2_31)
+     LUT3:I1->O            1   0.704   0.000  Mmux__varindex0000_1297 (Mmux__varindex0000_1297)
+     MUXF5:I0->O           1   0.321   0.000  Mmux__varindex0000_10_f5_72 (Mmux__varindex0000_10_f573)
+     MUXF6:I0->O           1   0.521   0.000  Mmux__varindex0000_8_f6_48 (Mmux__varindex0000_8_f649)
+     MUXF7:I1->O           1   0.521   0.000  Mmux__varindex0000_7_f7_23 (Mmux__varindex0000_7_f724)
+     MUXF8:I0->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.610ns (7.240ns logic, 1.370ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_10_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.566ns (Levels of Logic = 7)
+  Source:            registros_10_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_10_cmp_eq0000 falling
+
+  Data Path: registros_10_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.482  registros_10_31 (registros_10_31)
+     LUT3:I2->O            1   0.704   0.000  Mmux__varindex0000_1297 (Mmux__varindex0000_1297)
+     MUXF5:I0->O           1   0.321   0.000  Mmux__varindex0000_10_f5_72 (Mmux__varindex0000_10_f573)
+     MUXF6:I0->O           1   0.521   0.000  Mmux__varindex0000_8_f6_48 (Mmux__varindex0000_8_f649)
+     MUXF7:I1->O           1   0.521   0.000  Mmux__varindex0000_7_f7_23 (Mmux__varindex0000_7_f724)
+     MUXF8:I0->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.566ns (7.240ns logic, 1.326ns route)
+                                       (84.5% logic, 15.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_18_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.610ns (Levels of Logic = 7)
+  Source:            registros_18_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_18_cmp_eq00001 falling
+
+  Data Path: registros_18_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.526  registros_18_31 (registros_18_31)
+     LUT3:I1->O            1   0.704   0.000  Mmux__varindex0000_11148 (Mmux__varindex0000_11148)
+     MUXF5:I1->O           1   0.321   0.000  Mmux__varindex0000_10_f5_72 (Mmux__varindex0000_10_f573)
+     MUXF6:I0->O           1   0.521   0.000  Mmux__varindex0000_8_f6_48 (Mmux__varindex0000_8_f649)
+     MUXF7:I1->O           1   0.521   0.000  Mmux__varindex0000_7_f7_23 (Mmux__varindex0000_7_f724)
+     MUXF8:I0->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.610ns (7.240ns logic, 1.370ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_26_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.566ns (Levels of Logic = 7)
+  Source:            registros_26_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_26_cmp_eq00001 falling
+
+  Data Path: registros_26_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.482  registros_26_31 (registros_26_31)
+     LUT3:I2->O            1   0.704   0.000  Mmux__varindex0000_11148 (Mmux__varindex0000_11148)
+     MUXF5:I1->O           1   0.321   0.000  Mmux__varindex0000_10_f5_72 (Mmux__varindex0000_10_f573)
+     MUXF6:I0->O           1   0.521   0.000  Mmux__varindex0000_8_f6_48 (Mmux__varindex0000_8_f649)
+     MUXF7:I1->O           1   0.521   0.000  Mmux__varindex0000_7_f7_23 (Mmux__varindex0000_7_f724)
+     MUXF8:I0->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.566ns (7.240ns logic, 1.326ns route)
+                                       (84.5% logic, 15.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_3_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.610ns (Levels of Logic = 7)
+  Source:            registros_3_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_3_cmp_eq0000 falling
+
+  Data Path: registros_3_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.526  registros_3_31 (registros_3_31)
+     LUT3:I1->O            1   0.704   0.000  Mmux__varindex0000_11147 (Mmux__varindex0000_11147)
+     MUXF5:I0->O           1   0.321   0.000  Mmux__varindex0000_9_f5_73 (Mmux__varindex0000_9_f574)
+     MUXF6:I1->O           1   0.521   0.000  Mmux__varindex0000_8_f6_48 (Mmux__varindex0000_8_f649)
+     MUXF7:I1->O           1   0.521   0.000  Mmux__varindex0000_7_f7_23 (Mmux__varindex0000_7_f724)
+     MUXF8:I0->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.610ns (7.240ns logic, 1.370ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_11_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.566ns (Levels of Logic = 7)
+  Source:            registros_11_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_11_cmp_eq0000 falling
+
+  Data Path: registros_11_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.482  registros_11_31 (registros_11_31)
+     LUT3:I2->O            1   0.704   0.000  Mmux__varindex0000_11147 (Mmux__varindex0000_11147)
+     MUXF5:I0->O           1   0.321   0.000  Mmux__varindex0000_9_f5_73 (Mmux__varindex0000_9_f574)
+     MUXF6:I1->O           1   0.521   0.000  Mmux__varindex0000_8_f6_48 (Mmux__varindex0000_8_f649)
+     MUXF7:I1->O           1   0.521   0.000  Mmux__varindex0000_7_f7_23 (Mmux__varindex0000_7_f724)
+     MUXF8:I0->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.566ns (7.240ns logic, 1.326ns route)
+                                       (84.5% logic, 15.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_19_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.610ns (Levels of Logic = 7)
+  Source:            registros_19_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_19_cmp_eq00001 falling
+
+  Data Path: registros_19_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.526  registros_19_31 (registros_19_31)
+     LUT3:I1->O            1   0.704   0.000  Mmux__varindex0000_10123 (Mmux__varindex0000_10123)
+     MUXF5:I1->O           1   0.321   0.000  Mmux__varindex0000_9_f5_73 (Mmux__varindex0000_9_f574)
+     MUXF6:I1->O           1   0.521   0.000  Mmux__varindex0000_8_f6_48 (Mmux__varindex0000_8_f649)
+     MUXF7:I1->O           1   0.521   0.000  Mmux__varindex0000_7_f7_23 (Mmux__varindex0000_7_f724)
+     MUXF8:I0->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.610ns (7.240ns logic, 1.370ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_27_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.566ns (Levels of Logic = 7)
+  Source:            registros_27_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_27_cmp_eq00001 falling
+
+  Data Path: registros_27_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.482  registros_27_31 (registros_27_31)
+     LUT3:I2->O            1   0.704   0.000  Mmux__varindex0000_10123 (Mmux__varindex0000_10123)
+     MUXF5:I1->O           1   0.321   0.000  Mmux__varindex0000_9_f5_73 (Mmux__varindex0000_9_f574)
+     MUXF6:I1->O           1   0.521   0.000  Mmux__varindex0000_8_f6_48 (Mmux__varindex0000_8_f649)
+     MUXF7:I1->O           1   0.521   0.000  Mmux__varindex0000_7_f7_23 (Mmux__varindex0000_7_f724)
+     MUXF8:I0->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.566ns (7.240ns logic, 1.326ns route)
+                                       (84.5% logic, 15.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_4_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.610ns (Levels of Logic = 7)
+  Source:            registros_4_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_4_cmp_eq0000 falling
+
+  Data Path: registros_4_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.526  registros_4_31 (registros_4_31)
+     LUT3:I1->O            1   0.704   0.000  Mmux__varindex0000_1296 (Mmux__varindex0000_1296)
+     MUXF5:I0->O           1   0.321   0.000  Mmux__varindex0000_10_f5_71 (Mmux__varindex0000_10_f572)
+     MUXF6:I0->O           1   0.521   0.000  Mmux__varindex0000_8_f6_47 (Mmux__varindex0000_8_f648)
+     MUXF7:I0->O           1   0.521   0.000  Mmux__varindex0000_6_f7_23 (Mmux__varindex0000_6_f724)
+     MUXF8:I1->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.610ns (7.240ns logic, 1.370ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_12_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.566ns (Levels of Logic = 7)
+  Source:            registros_12_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_12_cmp_eq0000 falling
+
+  Data Path: registros_12_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.482  registros_12_31 (registros_12_31)
+     LUT3:I2->O            1   0.704   0.000  Mmux__varindex0000_1296 (Mmux__varindex0000_1296)
+     MUXF5:I0->O           1   0.321   0.000  Mmux__varindex0000_10_f5_71 (Mmux__varindex0000_10_f572)
+     MUXF6:I0->O           1   0.521   0.000  Mmux__varindex0000_8_f6_47 (Mmux__varindex0000_8_f648)
+     MUXF7:I0->O           1   0.521   0.000  Mmux__varindex0000_6_f7_23 (Mmux__varindex0000_6_f724)
+     MUXF8:I1->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.566ns (7.240ns logic, 1.326ns route)
+                                       (84.5% logic, 15.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_20_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.610ns (Levels of Logic = 7)
+  Source:            registros_20_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_20_cmp_eq0000 falling
+
+  Data Path: registros_20_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.526  registros_20_31 (registros_20_31)
+     LUT3:I1->O            1   0.704   0.000  Mmux__varindex0000_11146 (Mmux__varindex0000_11146)
+     MUXF5:I1->O           1   0.321   0.000  Mmux__varindex0000_10_f5_71 (Mmux__varindex0000_10_f572)
+     MUXF6:I0->O           1   0.521   0.000  Mmux__varindex0000_8_f6_47 (Mmux__varindex0000_8_f648)
+     MUXF7:I0->O           1   0.521   0.000  Mmux__varindex0000_6_f7_23 (Mmux__varindex0000_6_f724)
+     MUXF8:I1->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.610ns (7.240ns logic, 1.370ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_28_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.566ns (Levels of Logic = 7)
+  Source:            registros_28_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_28_cmp_eq00001 falling
+
+  Data Path: registros_28_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.482  registros_28_31 (registros_28_31)
+     LUT3:I2->O            1   0.704   0.000  Mmux__varindex0000_11146 (Mmux__varindex0000_11146)
+     MUXF5:I1->O           1   0.321   0.000  Mmux__varindex0000_10_f5_71 (Mmux__varindex0000_10_f572)
+     MUXF6:I0->O           1   0.521   0.000  Mmux__varindex0000_8_f6_47 (Mmux__varindex0000_8_f648)
+     MUXF7:I0->O           1   0.521   0.000  Mmux__varindex0000_6_f7_23 (Mmux__varindex0000_6_f724)
+     MUXF8:I1->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.566ns (7.240ns logic, 1.326ns route)
+                                       (84.5% logic, 15.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_5_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.610ns (Levels of Logic = 7)
+  Source:            registros_5_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_5_cmp_eq0000 falling
+
+  Data Path: registros_5_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.526  registros_5_31 (registros_5_31)
+     LUT3:I1->O            1   0.704   0.000  Mmux__varindex0000_11145 (Mmux__varindex0000_11145)
+     MUXF5:I0->O           1   0.321   0.000  Mmux__varindex0000_9_f5_72 (Mmux__varindex0000_9_f573)
+     MUXF6:I1->O           1   0.521   0.000  Mmux__varindex0000_8_f6_47 (Mmux__varindex0000_8_f648)
+     MUXF7:I0->O           1   0.521   0.000  Mmux__varindex0000_6_f7_23 (Mmux__varindex0000_6_f724)
+     MUXF8:I1->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.610ns (7.240ns logic, 1.370ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_13_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.566ns (Levels of Logic = 7)
+  Source:            registros_13_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_13_cmp_eq0000 falling
+
+  Data Path: registros_13_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.482  registros_13_31 (registros_13_31)
+     LUT3:I2->O            1   0.704   0.000  Mmux__varindex0000_11145 (Mmux__varindex0000_11145)
+     MUXF5:I0->O           1   0.321   0.000  Mmux__varindex0000_9_f5_72 (Mmux__varindex0000_9_f573)
+     MUXF6:I1->O           1   0.521   0.000  Mmux__varindex0000_8_f6_47 (Mmux__varindex0000_8_f648)
+     MUXF7:I0->O           1   0.521   0.000  Mmux__varindex0000_6_f7_23 (Mmux__varindex0000_6_f724)
+     MUXF8:I1->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.566ns (7.240ns logic, 1.326ns route)
+                                       (84.5% logic, 15.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_21_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.610ns (Levels of Logic = 7)
+  Source:            registros_21_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_21_cmp_eq0000 falling
+
+  Data Path: registros_21_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.526  registros_21_31 (registros_21_31)
+     LUT3:I1->O            1   0.704   0.000  Mmux__varindex0000_10122 (Mmux__varindex0000_10122)
+     MUXF5:I1->O           1   0.321   0.000  Mmux__varindex0000_9_f5_72 (Mmux__varindex0000_9_f573)
+     MUXF6:I1->O           1   0.521   0.000  Mmux__varindex0000_8_f6_47 (Mmux__varindex0000_8_f648)
+     MUXF7:I0->O           1   0.521   0.000  Mmux__varindex0000_6_f7_23 (Mmux__varindex0000_6_f724)
+     MUXF8:I1->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.610ns (7.240ns logic, 1.370ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_29_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.566ns (Levels of Logic = 7)
+  Source:            registros_29_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_29_cmp_eq00001 falling
+
+  Data Path: registros_29_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.482  registros_29_31 (registros_29_31)
+     LUT3:I2->O            1   0.704   0.000  Mmux__varindex0000_10122 (Mmux__varindex0000_10122)
+     MUXF5:I1->O           1   0.321   0.000  Mmux__varindex0000_9_f5_72 (Mmux__varindex0000_9_f573)
+     MUXF6:I1->O           1   0.521   0.000  Mmux__varindex0000_8_f6_47 (Mmux__varindex0000_8_f648)
+     MUXF7:I0->O           1   0.521   0.000  Mmux__varindex0000_6_f7_23 (Mmux__varindex0000_6_f724)
+     MUXF8:I1->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.566ns (7.240ns logic, 1.326ns route)
+                                       (84.5% logic, 15.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_6_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.610ns (Levels of Logic = 7)
+  Source:            registros_6_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_6_cmp_eq0000 falling
+
+  Data Path: registros_6_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.526  registros_6_31 (registros_6_31)
+     LUT3:I1->O            1   0.704   0.000  Mmux__varindex0000_11144 (Mmux__varindex0000_11144)
+     MUXF5:I0->O           1   0.321   0.000  Mmux__varindex0000_9_f5_71 (Mmux__varindex0000_9_f572)
+     MUXF6:I0->O           1   0.521   0.000  Mmux__varindex0000_7_f6_23 (Mmux__varindex0000_7_f624)
+     MUXF7:I1->O           1   0.521   0.000  Mmux__varindex0000_6_f7_23 (Mmux__varindex0000_6_f724)
+     MUXF8:I1->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.610ns (7.240ns logic, 1.370ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_14_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.566ns (Levels of Logic = 7)
+  Source:            registros_14_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_14_cmp_eq0000 falling
+
+  Data Path: registros_14_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.482  registros_14_31 (registros_14_31)
+     LUT3:I2->O            1   0.704   0.000  Mmux__varindex0000_11144 (Mmux__varindex0000_11144)
+     MUXF5:I0->O           1   0.321   0.000  Mmux__varindex0000_9_f5_71 (Mmux__varindex0000_9_f572)
+     MUXF6:I0->O           1   0.521   0.000  Mmux__varindex0000_7_f6_23 (Mmux__varindex0000_7_f624)
+     MUXF7:I1->O           1   0.521   0.000  Mmux__varindex0000_6_f7_23 (Mmux__varindex0000_6_f724)
+     MUXF8:I1->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.566ns (7.240ns logic, 1.326ns route)
+                                       (84.5% logic, 15.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_22_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.610ns (Levels of Logic = 7)
+  Source:            registros_22_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_22_cmp_eq00001 falling
+
+  Data Path: registros_22_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.526  registros_22_31 (registros_22_31)
+     LUT3:I1->O            1   0.704   0.000  Mmux__varindex0000_10121 (Mmux__varindex0000_10121)
+     MUXF5:I1->O           1   0.321   0.000  Mmux__varindex0000_9_f5_71 (Mmux__varindex0000_9_f572)
+     MUXF6:I0->O           1   0.521   0.000  Mmux__varindex0000_7_f6_23 (Mmux__varindex0000_7_f624)
+     MUXF7:I1->O           1   0.521   0.000  Mmux__varindex0000_6_f7_23 (Mmux__varindex0000_6_f724)
+     MUXF8:I1->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.610ns (7.240ns logic, 1.370ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_30_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.566ns (Levels of Logic = 7)
+  Source:            registros_30_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_30_cmp_eq00001 falling
+
+  Data Path: registros_30_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.482  registros_30_31 (registros_30_31)
+     LUT3:I2->O            1   0.704   0.000  Mmux__varindex0000_10121 (Mmux__varindex0000_10121)
+     MUXF5:I1->O           1   0.321   0.000  Mmux__varindex0000_9_f5_71 (Mmux__varindex0000_9_f572)
+     MUXF6:I0->O           1   0.521   0.000  Mmux__varindex0000_7_f6_23 (Mmux__varindex0000_7_f624)
+     MUXF7:I1->O           1   0.521   0.000  Mmux__varindex0000_6_f7_23 (Mmux__varindex0000_6_f724)
+     MUXF8:I1->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.566ns (7.240ns logic, 1.326ns route)
+                                       (84.5% logic, 15.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_7_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.610ns (Levels of Logic = 7)
+  Source:            registros_7_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_7_cmp_eq0000 falling
+
+  Data Path: registros_7_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.526  registros_7_31 (registros_7_31)
+     LUT3:I1->O            1   0.704   0.000  Mmux__varindex0000_10120 (Mmux__varindex0000_10120)
+     MUXF5:I0->O           1   0.321   0.000  Mmux__varindex0000_8_f5_47 (Mmux__varindex0000_8_f548)
+     MUXF6:I1->O           1   0.521   0.000  Mmux__varindex0000_7_f6_23 (Mmux__varindex0000_7_f624)
+     MUXF7:I1->O           1   0.521   0.000  Mmux__varindex0000_6_f7_23 (Mmux__varindex0000_6_f724)
+     MUXF8:I1->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.610ns (7.240ns logic, 1.370ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_15_cmp_eq0000'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.566ns (Levels of Logic = 7)
+  Source:            registros_15_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_15_cmp_eq0000 falling
+
+  Data Path: registros_15_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.482  registros_15_31 (registros_15_31)
+     LUT3:I2->O            1   0.704   0.000  Mmux__varindex0000_10120 (Mmux__varindex0000_10120)
+     MUXF5:I0->O           1   0.321   0.000  Mmux__varindex0000_8_f5_47 (Mmux__varindex0000_8_f548)
+     MUXF6:I1->O           1   0.521   0.000  Mmux__varindex0000_7_f6_23 (Mmux__varindex0000_7_f624)
+     MUXF7:I1->O           1   0.521   0.000  Mmux__varindex0000_6_f7_23 (Mmux__varindex0000_6_f724)
+     MUXF8:I1->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.566ns (7.240ns logic, 1.326ns route)
+                                       (84.5% logic, 15.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_23_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.610ns (Levels of Logic = 7)
+  Source:            registros_23_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_23_cmp_eq00001 falling
+
+  Data Path: registros_23_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.526  registros_23_31 (registros_23_31)
+     LUT3:I1->O            1   0.704   0.000  Mmux__varindex0000_972 (Mmux__varindex0000_972)
+     MUXF5:I1->O           1   0.321   0.000  Mmux__varindex0000_8_f5_47 (Mmux__varindex0000_8_f548)
+     MUXF6:I1->O           1   0.521   0.000  Mmux__varindex0000_7_f6_23 (Mmux__varindex0000_7_f624)
+     MUXF7:I1->O           1   0.521   0.000  Mmux__varindex0000_6_f7_23 (Mmux__varindex0000_6_f724)
+     MUXF8:I1->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.610ns (7.240ns logic, 1.370ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'registros_31_cmp_eq00001'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              8.566ns (Levels of Logic = 7)
+  Source:            registros_31_31 (LATCH)
+  Destination:       crs1<31> (PAD)
+  Source Clock:      registros_31_cmp_eq00001 falling
+
+  Data Path: registros_31_31 to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.676   0.482  registros_31_31 (registros_31_31)
+     LUT3:I2->O            1   0.704   0.000  Mmux__varindex0000_972 (Mmux__varindex0000_972)
+     MUXF5:I1->O           1   0.321   0.000  Mmux__varindex0000_8_f5_47 (Mmux__varindex0000_8_f548)
+     MUXF6:I1->O           1   0.521   0.000  Mmux__varindex0000_7_f6_23 (Mmux__varindex0000_7_f624)
+     MUXF7:I1->O           1   0.521   0.000  Mmux__varindex0000_6_f7_23 (Mmux__varindex0000_6_f724)
+     MUXF8:I1->O           1   0.521   0.424  Mmux__varindex0000_5_f8_23 (Mmux__varindex0000_5_f824)
+     LUT4:I3->O            1   0.704   0.420  crs1<31>1 (crs1_31_OBUF)
+     OBUF:I->O                 3.272          crs1_31_OBUF (crs1<31>)
+    ----------------------------------------
+    Total                      8.566ns (7.240ns logic, 1.326ns route)
+                                       (84.5% logic, 15.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2560 / 64
+-------------------------------------------------------------------------
+Delay:               12.171ns (Levels of Logic = 9)
+  Source:            nrs1<3> (PAD)
+  Destination:       crs1<31> (PAD)
+
+  Data Path: nrs1<3> to crs1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           256   1.218   1.333  nrs1_3_IBUF (nrs1_3_IBUF)
+     BUF:I->O            257   0.704   1.508  nrs1_3_IBUF_1 (nrs1_3_IBUF_1)
+     LUT3:I0->O            1   0.704   0.000  Mmux__varindex0000_993 (Mmux__varindex0000_993)
+     MUXF5:I1->O           1   0.321   0.000  Mmux__varindex0000_8_f5_61 (Mmux__varindex0000_8_f562)
+     MUXF6:I1->O           1   0.521   0.000  Mmux__varindex0000_7_f6_30 (Mmux__varindex0000_7_f631)
+     MUXF7:I1->O           1   0.521   0.000  Mmux__varindex0000_6_f7_30 (Mmux__varindex0000_6_f731)
+     MUXF8:I1->O           1   0.521   0.424  Mmux__varindex0000_5_f8_30 (Mmux__varindex0000_5_f831)
+     LUT4:I3->O            1   0.704   0.420  crs1<9>1 (crs1_9_OBUF)
+     OBUF:I->O                 3.272          crs1_9_OBUF (crs1<9>)
+    ----------------------------------------
+    Total                     12.171ns (8.486ns logic, 3.685ns route)
+                                       (69.7% logic, 30.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 55.00 secs
+Total CPU time to Xst completion: 55.19 secs
+ 
+--> 
+
+Total memory usage is 500116 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   43 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

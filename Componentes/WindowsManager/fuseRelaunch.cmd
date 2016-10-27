@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/Arquitectura/Componentes/WindowsManager/tb_Win_Man_isim_beh.exe" -prj "D:/Arquitectura/Componentes/WindowsManager/tb_Win_Man_beh.prj" "work.tb_Win_Man" 

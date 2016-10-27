@@ -1,0 +1,7 @@
+V3 3
+FL D:/Arquitectura/Componentes/IM/IM.vhd 2016/10/05.14:46:09 P.20131013
+EN work/IM 1475696775 FL D:/Arquitectura/Componentes/IM/IM.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB std/TEXTIO 1381692176
+AR work/IM/Behavioral 1475696776 \
+      FL D:/Arquitectura/Componentes/IM/IM.vhd EN work/IM 1475696775

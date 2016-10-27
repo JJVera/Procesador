@@ -1,0 +1,5 @@
+set -tmpdir "D:/Arquitectura/Componentes/SEU/xst/projnav.tmp"
+set -xsthdpdir "D:/Arquitectura/Componentes/SEU/xst"
+elaborate
+-ifn SEU.prj
+-ifmt mixed

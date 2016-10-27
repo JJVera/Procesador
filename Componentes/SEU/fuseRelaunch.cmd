@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/Arquitectura/Componentes/SEU/tb_SEU_isim_beh.exe" -prj "D:/Arquitectura/Componentes/SEU/tb_SEU_beh.prj" "work.tb_SEU" 

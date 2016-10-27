@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/Arquitectura/Componentes/PSR_Modifier/PSR_Modifier.xst" -ofn "D:/Arquitectura/Componentes/PSR_Modifier/PSR_Modifier.syr" 
+netgen -intstyle ise -ar Structure -tm PSR_Modifier -w -dir netgen/synthesis -ofmt vhdl -sim PSR_Modifier.ngc PSR_Modifier_synthesis.vhd 

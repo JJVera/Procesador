@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/Arquitectura/Componentes/PSR/PSR.xst" -ofn "D:/Arquitectura/Componentes/PSR/PSR.syr" 
+netgen -intstyle ise -ar Structure -tm PSR -w -dir netgen/synthesis -ofmt vhdl -sim PSR.ngc PSR_synthesis.vhd 

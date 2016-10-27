@@ -1,0 +1,5 @@
+set -tmpdir "D:/Arquitectura/Componentes/Sumador/xst/projnav.tmp"
+set -xsthdpdir "D:/Arquitectura/Componentes/Sumador/xst"
+elaborate
+-ifn Sumador.prj
+-ifmt mixed

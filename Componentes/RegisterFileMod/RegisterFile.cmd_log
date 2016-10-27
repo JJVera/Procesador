@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/Arquitectura/Componentes/RegisterFileMod/RegisterFile.xst" -ofn "D:/Arquitectura/Componentes/RegisterFileMod/RegisterFile.syr" 
+netgen -intstyle ise -ar Structure -tm RegisterFile -w -dir netgen/synthesis -ofmt vhdl -sim RegisterFile.ngc RegisterFile_synthesis.vhd 

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/Arquitectura/Componentes/Sumador/tb_Sumador_isim_beh.exe" -prj "D:/Arquitectura/Componentes/Sumador/tb_Sumador_beh.prj" "work.tb_Sumador" 

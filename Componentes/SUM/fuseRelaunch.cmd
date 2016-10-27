@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/JArango/Desktop/Arquitectura/SUM/tb_SUM_isim_beh.exe" -prj "C:/Users/JArango/Desktop/Arquitectura/SUM/tb_SUM_beh.prj" "work.tb_SUM" 
