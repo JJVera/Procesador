@@ -1,0 +1,1 @@
+vhdtdtfi -prj ProcesadorFour -o C:/Users/Vera96/Desktop/Arquitectura/ProcesadorFour/PC.vhi -module PC -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work D:/Arquitectura/Componentes/PC/PC.vhd 
