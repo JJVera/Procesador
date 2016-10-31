@@ -1,9 +1,0 @@
-V3 3
-FL D:/Arquitectura/Componentes/RegisterFileMod/RegisterFile.vhd 2016/10/19.14:26:48 P.20131013
-EN work/RegisterFile 1476905231 \
-      FL D:/Arquitectura/Componentes/RegisterFileMod/RegisterFile.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/RegisterFile/Behavioral 1476905232 \
-      FL D:/Arquitectura/Componentes/RegisterFileMod/RegisterFile.vhd \
-      EN work/RegisterFile 1476905231

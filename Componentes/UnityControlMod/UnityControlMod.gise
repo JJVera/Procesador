@@ -21,83 +21,8 @@
 
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="UnityControlMod.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
-    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="UC.cmd_log"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="UC.lso"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="UC.ngc"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="UC.ngr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="UC.prj"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="UC.stx"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="UC.syr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="UC.xst"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="UC_summary.html"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="UC_vhdl.prj"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="UC_xst.xrpt"/>
-    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
-    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
-    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/UC_synthesis.nlf"/>
-    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/UC_synthesis.vhd"/>
-    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
-    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
-  </files>
+  <files xmlns="http://www.xilinx.com/XMLSchema"/>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1476907621" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1476907621">
-      <status xil_pn:value="SuccessfullyRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1476907621" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7403905049437484669" xil_pn:start_ts="1476907621">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1476907621" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-3922941476523739805" xil_pn:start_ts="1476907621">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1476907621" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1476907621">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1476907621" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-5304446463007507141" xil_pn:start_ts="1476907621">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1476907621" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1476907621">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1476907621" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="5327860370140003437" xil_pn:start_ts="1476907621">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1476907631" xil_pn:in_ck="3407750248" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="7362096055568028500" xil_pn:start_ts="1476907621">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name=".lso"/>
-      <outfile xil_pn:name="UC.lso"/>
-      <outfile xil_pn:name="UC.ngc"/>
-      <outfile xil_pn:name="UC.ngr"/>
-      <outfile xil_pn:name="UC.prj"/>
-      <outfile xil_pn:name="UC.stx"/>
-      <outfile xil_pn:name="UC.syr"/>
-      <outfile xil_pn:name="UC.xst"/>
-      <outfile xil_pn:name="UC_vhdl.prj"/>
-      <outfile xil_pn:name="UC_xst.xrpt"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
-    </transform>
-    <transform xil_pn:end_ts="1476907635" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8431475895839870704" xil_pn:start_ts="1476907635">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1476907637" xil_pn:in_ck="3407741502" xil_pn:name="TRAN_postSynthesisSimModel" xil_pn:prop_ck="1210022559975488012" xil_pn:start_ts="1476907635">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="netgen"/>
-      <outfile xil_pn:name="netgen/synthesis/UC_synthesis.nlf"/>
-      <outfile xil_pn:name="netgen/synthesis/UC_synthesis.vhd"/>
-    </transform>
-  </transforms>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
 
 </generated_project>

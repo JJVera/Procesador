@@ -1,5 +1,0 @@
-set -tmpdir "C:/Users/JArango/Desktop/Arquitectura/MUX/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/JArango/Desktop/Arquitectura/MUX/xst"
-elaborate
--ifn MUX.prj
--ifmt mixed

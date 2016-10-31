@@ -1,7 +1,0 @@
-V3 3
-FL D:/Arquitectura/Componentes/UC/UC.vhd 2016/10/04.23:08:08 P.20131013
-EN work/UC 1475640499 FL D:/Arquitectura/Componentes/UC/UC.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/UC/Behavioral 1475640500 \
-      FL D:/Arquitectura/Componentes/UC/UC.vhd EN work/UC 1475640499

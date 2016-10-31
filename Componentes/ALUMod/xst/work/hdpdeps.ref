@@ -1,7 +1,0 @@
-V3 3
-FL D:/Arquitectura/Componentes/ALUMod/ALU.vhd 2016/10/19.15:37:14 P.20131013
-EN work/ALU 1476909444 FL D:/Arquitectura/Componentes/ALUMod/ALU.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/ALU/Behavioral 1476909445 \
-      FL D:/Arquitectura/Componentes/ALUMod/ALU.vhd EN work/ALU 1476909444

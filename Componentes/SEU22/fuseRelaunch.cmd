@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/Arquitectura/Componentes/SEU22/tb_SEUDisp_isim_beh.exe" -prj "D:/Arquitectura/Componentes/SEU22/tb_SEUDisp_beh.prj" "work.tb_SEUDisp" 

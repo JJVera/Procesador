@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-10-13T16:57:24</DateModified>
+  <DateModified>2016-10-31T10:17:53</DateModified>
   <ModuleName>RegisterFile</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/utp.CRIE/Desktop/Arquitectura/Componentes/RegisterFile/iseconfig/RegisterFile.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/utp.CRIE/Desktop/Arquitectura/Componentes/RegisterFile\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/Arquitectura/Componentes/RegisterFile/iseconfig/RegisterFile.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/Arquitectura/Componentes/RegisterFile\</ImplementationReportsDirectory>
   <DateInitialized>2016-09-30T18:31:50</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

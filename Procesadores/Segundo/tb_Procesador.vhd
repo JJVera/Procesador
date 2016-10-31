@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   15:15:07 10/26/2016
+-- Create Date:   10:07:32 10/31/2016
 -- Design Name:   
--- Module Name:   C:/Users/Vera96/Desktop/Arquitectura/ProcesadorFour/tb_Procesador.vhd
+-- Module Name:   D:/Arquitectura/Procesadores/Segundo/tb_Procesador.vhd
 -- Project Name:  ProcesadorFour
 -- Target Device:  
 -- Tool versions:  
@@ -43,8 +43,9 @@ ARCHITECTURE behavior OF tb_Procesador IS
     PORT(
          Clk : IN  std_logic;
          Rst : IN  std_logic;
-         Hola1 : OUT  std_logic_vector(31 downto 0);
-         Hola2 : OUT  std_logic_vector(31 downto 0);
+         Cwp : OUT  std_logic;
+         Ncwp : OUT  std_logic;
+         NZVC : OUT  std_logic_vector(3 downto 0);
          AluResult : OUT  std_logic_vector(31 downto 0)
         );
     END COMPONENT;
@@ -55,8 +56,9 @@ ARCHITECTURE behavior OF tb_Procesador IS
    signal Rst : std_logic := '0';
 
  	--Outputs
-   signal Hola1 : std_logic_vector(31 downto 0);
-   signal Hola2 : std_logic_vector(31 downto 0);
+   signal Cwp : std_logic;
+   signal Ncwp : std_logic;
+   signal NZVC : std_logic_vector(3 downto 0);
    signal AluResult : std_logic_vector(31 downto 0);
 
    -- Clock period definitions
@@ -68,17 +70,18 @@ BEGIN
    uut: Procesador PORT MAP (
           Clk => Clk,
           Rst => Rst,
-          Hola1 => Hola1,
-          Hola2 => Hola2,
+          Cwp => Cwp,
+          Ncwp => Ncwp,
+          NZVC => NZVC,
           AluResult => AluResult
         );
 
    -- Clock process definitions
    Clk_process :process
    begin
-		Clk <= '0';
-		wait for Clk_period/2;
 		Clk <= '1';
+		wait for Clk_period/2;
+		Clk <= '0';
 		wait for Clk_period/2;
    end process;
  

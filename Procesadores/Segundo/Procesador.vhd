@@ -34,8 +34,9 @@ use IEEE.STD_LOGIC_unsigned.ALL;
 entity Procesador is
     Port ( Clk : in  STD_LOGIC;
            Rst : in  STD_LOGIC;
-           Hola1 : out  STD_LOGIC_VECTOR (31 downto 0);
-           Hola2 : out  STD_LOGIC_VECTOR (31 downto 0);
+           Cwp: out STD_LOGIC;
+			  Ncwp : out STD_LOGIC;
+			  NZVC : out STD_LOGIC_VECTOR (3 downto 0);
            AluResult : out  STD_LOGIC_VECTOR (31 downto 0));
 end Procesador;
 
@@ -245,7 +246,8 @@ begin
 	);
 	
 	AluResult <= SalidaAlu;
-	Hola1 <= ConRS1;
-	Hola2 <= SalidaMux;
+	Ncwp <= SalidaWin;
+	Cwp <= SalidaPSR;
+	NZVC <= icc;
 
 end Behavioral;

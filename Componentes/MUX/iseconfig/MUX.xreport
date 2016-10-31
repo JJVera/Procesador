@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-10-04T17:21:19</DateModified>
+  <DateModified>2016-10-31T10:16:00</DateModified>
   <ModuleName>MUX</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/JArango/Desktop/Arquitectura/MUX/iseconfig/MUX.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/JArango/Desktop/Arquitectura/MUX</ImplementationReportsDirectory>
+  <SavedFilePath>D:/Arquitectura/Componentes/MUX/iseconfig/MUX.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/Arquitectura/Componentes/MUX\</ImplementationReportsDirectory>
   <DateInitialized>2016-10-04T16:39:17</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

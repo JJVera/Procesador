@@ -1,8 +1,0 @@
-V3 4
-FL C:/Users/JArango/Desktop/Arquitectura/SEU/SEU.vhd 2016/10/04.17:00:29 P.20131013
-FL D:/Arquitectura/Componentes/SEU/SEU.vhd 2016/10/04.17:00:29 P.20131013
-EN work/SEU 1475641194 FL D:/Arquitectura/Componentes/SEU/SEU.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/SEU/Behavioral 1475641195 \
-      FL D:/Arquitectura/Componentes/SEU/SEU.vhd EN work/SEU 1475641194

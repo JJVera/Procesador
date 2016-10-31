@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-10-21T14:34:41</DateModified>
+  <DateModified>2016-10-31T10:17:31</DateModified>
   <ModuleName>PSR</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>D:/Arquitectura/Componentes/PSR/iseconfig/PSR.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Arquitectura/Componentes/PSR</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/Arquitectura/Componentes/PSR\</ImplementationReportsDirectory>
   <DateInitialized>2016-10-21T14:34:41</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

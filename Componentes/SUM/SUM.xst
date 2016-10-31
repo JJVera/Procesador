@@ -1,5 +1,0 @@
-set -tmpdir "C:/Users/JArango/Desktop/Arquitectura/SUM/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/JArango/Desktop/Arquitectura/SUM/xst"
-elaborate
--ifn SUM.prj
--ifmt mixed

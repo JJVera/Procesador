@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/utp.CRIE/Desktop/Arquitectura/Componentes/RegisterFile/tb_RegisterFile_isim_beh.exe" -prj "C:/Users/utp.CRIE/Desktop/Arquitectura/Componentes/RegisterFile/tb_RegisterFile_beh.prj" "work.tb_RegisterFile" 
+-intstyle "ise" -incremental -o "D:/Arquitectura/Componentes/RegisterFile/tb_RegisterFile_isim_beh.exe" -prj "D:/Arquitectura/Componentes/RegisterFile/tb_RegisterFile_beh.prj" "work.tb_RegisterFile" 

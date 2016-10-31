@@ -1,2 +1,0 @@
-xst -intstyle ise -ifn "D:/Arquitectura/Componentes/WindowsManager/Win_Man.xst" -ofn "D:/Arquitectura/Componentes/WindowsManager/Win_Man.syr" 
-netgen -intstyle ise -ar Structure -tm Win_Man -w -dir netgen/synthesis -ofmt vhdl -sim Win_Man.ngc Win_Man_synthesis.vhd 
