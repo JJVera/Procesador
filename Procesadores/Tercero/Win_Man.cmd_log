@@ -1,0 +1,1 @@
+vhdtdtfi -prj Tercero -o D:/Arquitectura/Procesadores/Tercero/Win_Man.vhi -module Win_Man -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../../Componentes/WindowsManager/Win_Man.vhd 

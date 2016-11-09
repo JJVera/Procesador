@@ -1,0 +1,1 @@
+vhdtdtfi -prj Tercero -o D:/Arquitectura/Procesadores/Tercero/SEU30.vhi -module SEU30 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../../Componentes/SEU30/SEU30.vhd 

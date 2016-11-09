@@ -1,0 +1,1 @@
+vhdtdtfi -prj Tercero -o D:/Arquitectura/Procesadores/Tercero/Sumador.vhi -module Sumador -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../../Componentes/Sumador/Sumador.vhd 

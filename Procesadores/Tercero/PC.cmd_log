@@ -1,0 +1,1 @@
+vhdtdtfi -prj Tercero -o D:/Arquitectura/Procesadores/Tercero/PC.vhi -module PC -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../../Componentes/PC/PC.vhd 
