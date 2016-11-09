@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-11-08T16:21:55</DateModified>
+  <DateModified>2016-11-09T10:33:20</DateModified>
   <ModuleName>UnityControl</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/Arquitectura/Componentes/UnityControlP/iseconfig/UnityControl.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Arquitectura/Componentes/UnityControlP\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Vera96/Desktop/Procesador/Componentes/UnityControlP/iseconfig/UnityControl.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Vera96/Desktop/Procesador/Componentes/UnityControlP\</ImplementationReportsDirectory>
   <DateInitialized>2016-11-05T17:54:44</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

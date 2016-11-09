@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Vera96/Desktop/Procesador/Componentes/RegisterFileP/tb_RegisterFile_isim_beh.exe" -prj "C:/Users/Vera96/Desktop/Procesador/Componentes/RegisterFileP/tb_RegisterFile_beh.prj" "work.tb_RegisterFile" 

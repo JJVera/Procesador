@@ -243,7 +243,7 @@ begin
 	
 	Inst_Sumador1: Sumador PORT MAP(
 		A => DirBranch,
-		B => DirSum,
+		B => Adress,
 		S => NextDirBranch
 	);
 	
@@ -254,7 +254,7 @@ begin
 	
 	Inst_Sumador2: Sumador PORT MAP(
 		A => DirCall,
-		B => DirSum,
+		B => Adress,
 		S => NextDirCall
 	);
 	

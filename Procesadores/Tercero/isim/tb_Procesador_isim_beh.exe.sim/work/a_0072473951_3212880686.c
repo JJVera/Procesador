@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "D:/Arquitectura/Componentes/MUX4/MUXF.vhd";
+static const char *ng0 = "C:/Users/Vera96/Desktop/Procesador/Componentes/MUX4/MUXF.vhd";
 
 
 
@@ -49,22 +49,22 @@ static void work_a_0072473951_3212880686_p_0(char *t0)
 LAB0:    xsi_set_current_line(46, ng0);
     t1 = (t0 + 1672U);
     t2 = *((char **)t1);
-    t1 = (t0 + 5290);
+    t1 = (t0 + 5462);
     t4 = xsi_mem_cmp(t1, t2, 2U);
     if (t4 == 1)
         goto LAB3;
 
-LAB8:    t5 = (t0 + 5292);
+LAB8:    t5 = (t0 + 5464);
     t7 = xsi_mem_cmp(t5, t2, 2U);
     if (t7 == 1)
         goto LAB4;
 
-LAB9:    t8 = (t0 + 5294);
+LAB9:    t8 = (t0 + 5466);
     t10 = xsi_mem_cmp(t8, t2, 2U);
     if (t10 == 1)
         goto LAB5;
 
-LAB10:    t11 = (t0 + 5296);
+LAB10:    t11 = (t0 + 5468);
     t13 = xsi_mem_cmp(t11, t2, 2U);
     if (t13 == 1)
         goto LAB6;

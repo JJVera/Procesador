@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "D:/Arquitectura/Componentes/RegisterFileP/RegisterFile.vhd";
+static const char *ng0 = "C:/Users/Vera96/Desktop/Procesador/Componentes/RegisterFileP/RegisterFile.vhd";
 extern char *IEEE_P_3620187407;
 
 unsigned char ieee_p_3620187407_sub_4042748798_3965413181(char *, char *, char *, char *, char *);
@@ -67,8 +67,8 @@ LAB0:    xsi_set_current_line(55, ng0);
 LAB4:    xsi_set_current_line(61, ng0);
     t1 = (t0 + 1352U);
     t2 = *((char **)t1);
-    t1 = (t0 + 6760U);
-    t5 = (t0 + 8244);
+    t1 = (t0 + 7008U);
+    t5 = (t0 + 8492);
     t7 = (t15 + 0U);
     t10 = (t7 + 0U);
     *((int *)t10) = 0;
@@ -96,7 +96,7 @@ LAB8:    xsi_set_current_line(64, ng0);
     t2 = *((char **)t1);
     t1 = (t0 + 1032U);
     t5 = *((char **)t1);
-    t1 = (t0 + 6728U);
+    t1 = (t0 + 6976U);
     t16 = ieee_p_3620187407_sub_514432868_3965413181(IEEE_P_3620187407, t5, t1);
     t18 = (t16 - 39);
     t9 = (t18 * -1);
@@ -116,7 +116,7 @@ LAB8:    xsi_set_current_line(64, ng0);
     t2 = *((char **)t1);
     t1 = (t0 + 1192U);
     t5 = *((char **)t1);
-    t1 = (t0 + 6744U);
+    t1 = (t0 + 6992U);
     t16 = ieee_p_3620187407_sub_514432868_3965413181(IEEE_P_3620187407, t5, t1);
     t18 = (t16 - 39);
     t9 = (t18 * -1);
@@ -136,7 +136,7 @@ LAB8:    xsi_set_current_line(64, ng0);
     t2 = *((char **)t1);
     t1 = (t0 + 1352U);
     t5 = *((char **)t1);
-    t1 = (t0 + 6760U);
+    t1 = (t0 + 7008U);
     t16 = ieee_p_3620187407_sub_514432868_3965413181(IEEE_P_3620187407, t5, t1);
     t18 = (t16 - 39);
     t9 = (t18 * -1);
@@ -160,7 +160,7 @@ LAB2:    xsi_set_current_line(56, ng0);
     t1 = xsi_get_transient_memory(1280U);
     memset(t1, 0, 1280U);
     t5 = t1;
-    t6 = (t0 + 8212);
+    t6 = (t0 + 8460);
     t8 = (32U != 0);
     if (t8 == 1)
         goto LAB5;
@@ -219,7 +219,7 @@ LAB7:    xsi_set_current_line(62, ng0);
     t12 = *((char **)t10);
     t10 = (t0 + 1352U);
     t13 = *((char **)t10);
-    t10 = (t0 + 6760U);
+    t10 = (t0 + 7008U);
     t18 = ieee_p_3620187407_sub_514432868_3965413181(IEEE_P_3620187407, t13, t10);
     t19 = (t18 - 39);
     t9 = (t19 * -1);

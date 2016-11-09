@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "D:/Arquitectura/Componentes/SEU30/SEU30.vhd";
+static const char *ng0 = "C:/Users/Vera96/Desktop/Procesador/Componentes/SEU30/SEU30.vhd";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_2545490612_503743352(char *, unsigned char , unsigned char );
@@ -54,9 +54,9 @@ static void work_a_0542593727_3212880686_p_0(char *t0)
     char *t23;
 
 LAB0:    xsi_set_current_line(42, ng0);
-    t1 = (t0 + 4306);
+    t1 = (t0 + 4402);
     *((int *)t1) = 30;
-    t2 = (t0 + 4310);
+    t2 = (t0 + 4406);
     *((int *)t2) = 31;
     t3 = 30;
     t4 = 31;
@@ -92,7 +92,7 @@ LAB3:    xsi_set_current_line(43, ng0);
     t5 = (t6 + t10);
     t11 = *((unsigned char *)t5);
     t12 = ieee_p_2592010699_sub_2545490612_503743352(IEEE_P_2592010699, (unsigned char)2, t11);
-    t13 = (t0 + 4306);
+    t13 = (t0 + 4402);
     t14 = *((int *)t13);
     t15 = (t14 - 31);
     t16 = (t15 * -1);
@@ -106,16 +106,16 @@ LAB3:    xsi_set_current_line(43, ng0);
     *((unsigned char *)t23) = t12;
     xsi_driver_first_trans_delta(t19, t18, 1, 0LL);
 
-LAB4:    t1 = (t0 + 4306);
+LAB4:    t1 = (t0 + 4402);
     t3 = *((int *)t1);
-    t2 = (t0 + 4310);
+    t2 = (t0 + 4406);
     t4 = *((int *)t2);
     if (t3 == t4)
         goto LAB5;
 
 LAB6:    t7 = (t3 + 1);
     t3 = t7;
-    t5 = (t0 + 4306);
+    t5 = (t0 + 4402);
     *((int *)t5) = t3;
     goto LAB2;
 

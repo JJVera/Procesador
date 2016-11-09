@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "D:/Arquitectura/Componentes/DM/DataMemory.vhd";
+static const char *ng0 = "C:/Users/Vera96/Desktop/Procesador/Componentes/DM/DataMemory.vhd";
 extern char *IEEE_P_2592010699;
 extern char *IEEE_P_3620187407;
 
@@ -150,7 +150,7 @@ LAB8:    xsi_set_current_line(36, ng0);
     t1 = xsi_get_transient_memory(2048U);
     memset(t1, 0, 2048U);
     t3 = t1;
-    t4 = (t0 + 8208);
+    t4 = (t0 + 8416);
     t2 = (32U != 0);
     if (t2 == 1)
         goto LAB11;

@@ -1,0 +1,7 @@
+[Inputs]
+Clk
+Rst
+[Outputs]
+=Salida[31:0]=
+=Hola[31:0]=
+[BiDir]

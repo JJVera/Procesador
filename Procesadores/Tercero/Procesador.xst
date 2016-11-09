@@ -1,5 +1,5 @@
-set -tmpdir "D:/Arquitectura/Procesadores/Tercero/xst/projnav.tmp"
-set -xsthdpdir "D:/Arquitectura/Procesadores/Tercero/xst"
+set -tmpdir "C:/Users/Vera96/Desktop/Procesador/Procesadores/Tercero/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Vera96/Desktop/Procesador/Procesadores/Tercero/xst"
 elaborate
 -ifn Procesador.prj
 -ifmt mixed

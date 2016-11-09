@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-10-31T10:16:19</DateModified>
+  <DateModified>2016-11-09T10:30:45</DateModified>
   <ModuleName>MUXF</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/Arquitectura/Componentes/MUX4/iseconfig/MUXF.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Arquitectura/Componentes/MUX4\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Vera96/Desktop/Procesador/Componentes/MUX4/iseconfig/MUXF.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Vera96/Desktop/Procesador/Componentes/MUX4\</ImplementationReportsDirectory>
   <DateInitialized>2016-10-28T16:50:35</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

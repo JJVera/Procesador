@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Vera96/Desktop/Procesador/Componentes/UnityControlP/tb_UnityControl_isim_beh.exe" -prj "C:/Users/Vera96/Desktop/Procesador/Componentes/UnityControlP/tb_UnityControl_beh.prj" "work.tb_UnityControl" 
