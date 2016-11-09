@@ -99,7 +99,21 @@ BEGIN
 		Cond <= "1000";
 		wait for 20 ns;
 		
+		OP3 <= "111000";
+		wait for 20 ns;
+		
 		OP <= "00";
+		wait for 20 ns;
+		
+		OP <= "01";
+		wait for 20 ns;
+		
+		OP <= "11";
+		OP3 <= "000000";
+		wait for 20 ns;
+		
+		OP <= "10";
+		OP3 <= "000000";
 		wait;
    end process;
 
