@@ -201,34 +201,34 @@ architecture Behavioral of Procesador is
 		);
 	END COMPONENT;
 
-signal DirAnt, Dir, Adress, SalidaIM, SalidaAlu, ConRS1 : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
-signal DirSum, DirCall, DirBranch, NextDirBranch, NextDirCall : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
-signal ConRd, DatatoReg, DatatoMem : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
-signal ConRS2, SalidaSeu, SalidaMux : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
-signal SalidaPSR, SalidaWin, SalidaPSRCarry, RFD, WERegister, WRenMen, RdEm : STD_LOGIC :=  '0';
-signal AUXRd, AuxRS1, AuxRS2, nRd, EntradaAlu : STD_LOGIC_VECTOR(5 downto 0) := (others => '0');
-signal icc : STD_LOGIC_VECTOR(3 downto 0) := (others => '0');
+signal nextPc, PcCall, PcBranch, PcNormal, nextAdress, Adress : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
+signal SalidaIm, Inmediate, Operando, cRs1, cRs2, cRd : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
+signal nPcCall, nPcBranch, AluResult : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
+signal EnMem, WEMem, WE, RFDest, Carry, CWP, NCWP : STD_LOGIC :=  '0';
+signal DatatoReg, DatatoMem : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
+signal AluOp, nRs1, nRs2, nRd, Rd : STD_LOGIC_VECTOR(5 downto 0) := (others => '0');
+signal icc: STD_LOGIC_VECTOR(3 downto 0) := (others => '0');
 signal PcSource, RFSource : STD_LOGIC_VECTOR(1 downto 0) := (others => '0');
 	
 begin
 	nPc: PC PORT MAP(
 		Rst => Rst,
 		Clk => Clk,
-		Datain => DirAnt,
-		Dataout => Dir
+		Datain => nextPc,
+		Dataout => nextAdress
 	);
 
 	Pc0: PC PORT MAP(
 		Rst => Rst,
 		Clk => Clk,
-		Datain => Dir,
+		Datain => nextAdress,
 		Dataout => Adress
 	);
 
-	Inst_Sumador: Sumador PORT MAP(
-		A => Dir,
+	Inst_Sumador0: Sumador PORT MAP(
+		A => nextAdress,
 		B => "00000000000000000000000000000001",
-		S => DirSum
+		S => PcNormal
 	);
 
 	Inst_IM: IM PORT MAP(
@@ -238,33 +238,33 @@ begin
 	
 	Inst_SEUDisp: SEUDisp PORT MAP(
 		Disp22 => SalidaIM(21 downto 0),
-		Result => DirBranch
+		Result => PcBranch
 	);
 	
 	Inst_Sumador1: Sumador PORT MAP(
-		A => DirBranch,
+		A => PcBranch,
 		B => Adress,
-		S => NextDirBranch
+		S => nPcBranch
 	);
 	
 	Inst_SEU30: SEU30 PORT MAP(
 		A => SalidaIM(29 downto 0),
-		S => DirCall
+		S => PcCall
 	);
 	
 	Inst_Sumador2: Sumador PORT MAP(
-		A => DirCall,
+		A => PcCall,
 		B => Adress,
-		S => NextDirCall
+		S => nPcCall
 	);
 	
 	Inst_MUXF0: MUXF PORT MAP(
-		A => NextDirCall,
-		B => NextDirBranch,
-		C => DirSum,
-		D => SalidaAlu,
-		Sc => PcSource,
-		S => DirAnt
+		A => nPcCall,
+		B => nPcBranch,
+		C => PcNormal,
+		D => AluResult,
+		Sc =>PcSource,
+		S => nextPc
 	);
 	
 	Inst_UnityControl: UnityControl PORT MAP(
@@ -272,12 +272,12 @@ begin
 		OP3 => SalidaIm(24 downto 19),
 		ICC => icc,
 		Cond => SalidaIm(28 downto 25),
-		EDM => RdEm,
+		EDM => EnMem,
 		Resource => RFSource,
-		WEMemory => WRenMen,
-		WERegister => WERegister,
-		Aluop => EntradaAlu,
-		RFDest => RFD,
+		WEMemory => WEMem,
+		WERegister => WE,
+		Aluop => AluOp,
+		RFDest => RFDest,
 		PCsource => PcSource
 	);
 
@@ -287,81 +287,81 @@ begin
 		rd => SalidaIm(29 downto 25),
 		op => SalidaIm(31 downto 30),
 		op3 => SalidaIm(24 downto 19),
-		cwp => SalidaPSR,
-		ncwp => SalidaWin,
-		nrs1 => AUXRS1,
-		nrs2 => AUXRS2,
-		nrd => AUXRd 
+		cwp => CWP,
+		ncwp => NCWP,
+		nrs1 => nRs1,
+		nrs2 => nRs2,
+		nrd => Rd
 	);
 	
 	Inst_MUXC: MUXC PORT MAP(
-		A => AUXRd,
+		A => Rd,
 		B => "001111",
-		Sc => RFD,
+		Sc => RFDest,
 		S => nRd
 	);
 	
 	Inst_RegisterFile: RegisterFile PORT MAP(
-		nRs1 => AUXRS1,
-		nRs2 => AUXRS2,
+		nRs1 => nRs1,
+		nRs2 => nRs2,
 		nRd => nRd,
 		Data => DatatoReg,
-		WE => WERegister,
+		WE => WE,
 		Rst => Rst,
-		CRS1 => ConRS1,
-		CRS2 => ConRS2,
-		CRD => ConRd
+		CRS1 => cRs1,
+		CRS2 => cRs2,
+		CRD => cRd
 	);
 	
 	Inst_SEU: SEU PORT MAP(
 		A => SalidaIM(12 downto 0),
-		S => SalidaSeu
+		S => Inmediate
 	);
 	
 	Inst_MUX: MUX PORT MAP(
-		A => SalidaSeu,
-		B => ConRd,
-		Sc => SalidaIM(13),
-		S => SalidaMux
+		A => cRs2,
+		B => Inmediate,
+		Sc => SalidaIm(13),
+		S => Operando
 	);
 	
 	Inst_PSR_Modifier: PSR_Modifier PORT MAP(
-		crs1 => ConRS1,
-		SalidaMux => SalidaMux,
-		AluOp => EntradaAlu,
-		AluResult => SalidaAlu,
+		crs1 => cRs1,
+		SalidaMux => Operando,
+		AluOp => AluOp,
+		AluResult => AluResult,
 		NZVC => icc
 	);
 	
 	Inst_PSR: PSR PORT MAP(
 		Clk => Clk,
 		NZVC => icc,
-		ncwp => SalidaWin,
-		cwp => SalidaPSR,
-		Carry => SalidaPSRCarry
+		ncwp => NCWP,
+		cwp => CWP,
+		Carry => Carry
 	);
 	
 	Inst_ALU: ALU PORT MAP(
-		A => ConRS1,
-		B => SalidaMux,
-		AluOp => EntradaAlu,
-		carry => SalidaPSRCarry,
-		AluResult => SalidaAlu
+		A => cRs1,
+		B => Operando,
+		AluOp => AluOp,
+		carry => Carry,
+		AluResult => AluResult
 	);
 	
 	Inst_DataMemory: DataMemory PORT MAP(
 		Clk => Clk,
 		Rst => Rst,
-		cRD => ConRd,
-		SalidaAlu => SalidaAlu,
-		WRen => WRenMen,
-		RDen => RdEm,
+		cRD => cRd,
+		SalidaAlu => AluResult,
+		WRen => WEMem,
+		RDen => EnMem,
 		Data => DatatoMem
 	);
 	
 	Inst_MUXF: MUXF PORT MAP(
 		A => DatatoMem,
-		B => SalidaAlu,
+		B => AluResult,
 		C => Adress,
 		D => "00000000000000000000000000000000",
 		Sc => RFSource,
@@ -369,5 +369,7 @@ begin
 	);
 
 	Salida <= DatatoReg;
+	Hola <= Adress;
+	
 end Behavioral;
 

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-10-31T10:18:34</DateModified>
+  <DateModified>2016-11-09T11:33:54</DateModified>
   <ModuleName>SEUDisp</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/Arquitectura/Componentes/SEU22/iseconfig/SEUDisp.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Arquitectura/Componentes/SEU22\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Vera96/Desktop/Procesador/Componentes/SEU22/iseconfig/SEUDisp.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Vera96/Desktop/Procesador/Componentes/SEU22\</ImplementationReportsDirectory>
   <DateInitialized>2016-10-28T16:36:33</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

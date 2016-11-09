@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-11-08T16:26:17</DateModified>
+  <DateModified>2016-11-09T11:32:33</DateModified>
   <ModuleName>DataMemory</ModuleName>
   <SummaryTimeStamp>2016-11-08T16:26:10</SummaryTimeStamp>
-  <SavedFilePath>D:/Arquitectura/Componentes/DM/iseconfig/DataMemory.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Arquitectura/Componentes/DM\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Vera96/Desktop/Procesador/Componentes/DM/iseconfig/DataMemory.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Vera96/Desktop/Procesador/Componentes/DM\</ImplementationReportsDirectory>
   <DateInitialized>2016-11-03T18:37:44</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

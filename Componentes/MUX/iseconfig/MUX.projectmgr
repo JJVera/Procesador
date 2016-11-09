@@ -9,13 +9,13 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>MUX - Behavioral (D:/Arquitectura/Componentes/MUX/MUX.vhd)</SelectedItem>
+         <SelectedItem>MUX - Behavioral (C:/Users/Vera96/Desktop/Procesador/Componentes/MUX/MUX.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000ec000000020000000000000000000000000200000064ffffffff000000810000000300000002000000ec0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>MUX - Behavioral (D:/Arquitectura/Componentes/MUX/MUX.vhd)</CurrentItem>
+      <CurrentItem>MUX - Behavioral (C:/Users/Vera96/Desktop/Procesador/Componentes/MUX/MUX.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
