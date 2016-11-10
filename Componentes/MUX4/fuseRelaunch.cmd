@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "D:/Arquitectura/Componentes/MUX4/tb_MUXF_isim_beh.exe" -prj "D:/Arquitectura/Componentes/MUX4/tb_MUXF_beh.prj" "work.tb_MUXF" 
+-intstyle "ise" -incremental -o "C:/Users/Vera96/Desktop/Procesador/Componentes/MUX4/tb_MUXF_isim_beh.exe" -prj "C:/Users/Vera96/Desktop/Procesador/Componentes/MUX4/tb_MUXF_beh.prj" "work.tb_MUXF" 
