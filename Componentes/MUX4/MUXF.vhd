@@ -19,6 +19,8 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_arith.ALL;
+use IEEE.STD_LOGIC_unsigned.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -48,7 +50,7 @@ begin
 			when "01" => S <= B;
 			when "10" => S <= C;
 			when "11" => S <= D;
-			when others => S <= (others => '0');
+			when others => S <= A;
 		end case;
 	end process;
 end Behavioral;
