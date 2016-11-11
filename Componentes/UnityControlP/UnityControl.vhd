@@ -52,7 +52,7 @@ begin
 		case OP is
 			when "00" => --BRANCH
 				EDM <= '0';
-				Resource <= "01";
+				Resource <= "11";
 				WEMemory <= '0';
 				WERegister <= '0';
 				Aluop <= "000000";
