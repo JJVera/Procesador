@@ -1,0 +1,179 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml Procesador.twx Procesador.ncd -o Procesador.twr
+Procesador.pcf
+
+Design file:              Procesador.ncd
+Physical constraint file: Procesador.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Clk
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+Rst         |   25.835(R)|   -0.436(R)|Clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock Clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+Hola<0>     |   11.301(R)|Clk_BUFGP         |   0.000|
+Hola<1>     |   10.597(R)|Clk_BUFGP         |   0.000|
+Hola<2>     |   10.917(R)|Clk_BUFGP         |   0.000|
+Hola<3>     |   10.250(R)|Clk_BUFGP         |   0.000|
+Hola<4>     |   10.781(R)|Clk_BUFGP         |   0.000|
+Hola<5>     |    9.774(R)|Clk_BUFGP         |   0.000|
+Hola<6>     |    8.795(R)|Clk_BUFGP         |   0.000|
+Hola<7>     |    9.125(R)|Clk_BUFGP         |   0.000|
+Hola<8>     |    8.929(R)|Clk_BUFGP         |   0.000|
+Hola<9>     |    9.051(R)|Clk_BUFGP         |   0.000|
+Hola<10>    |    8.728(R)|Clk_BUFGP         |   0.000|
+Hola<11>    |    9.114(R)|Clk_BUFGP         |   0.000|
+Hola<12>    |    8.278(R)|Clk_BUFGP         |   0.000|
+Hola<13>    |    9.084(R)|Clk_BUFGP         |   0.000|
+Hola<14>    |    8.851(R)|Clk_BUFGP         |   0.000|
+Hola<15>    |    9.483(R)|Clk_BUFGP         |   0.000|
+Hola<16>    |    9.382(R)|Clk_BUFGP         |   0.000|
+Hola<17>    |    8.056(R)|Clk_BUFGP         |   0.000|
+Hola<18>    |    8.208(R)|Clk_BUFGP         |   0.000|
+Hola<19>    |    9.360(R)|Clk_BUFGP         |   0.000|
+Hola<20>    |    8.023(R)|Clk_BUFGP         |   0.000|
+Hola<21>    |    7.499(R)|Clk_BUFGP         |   0.000|
+Hola<22>    |    7.806(R)|Clk_BUFGP         |   0.000|
+Hola<23>    |    8.122(R)|Clk_BUFGP         |   0.000|
+Hola<24>    |    7.815(R)|Clk_BUFGP         |   0.000|
+Hola<25>    |    7.866(R)|Clk_BUFGP         |   0.000|
+Hola<26>    |    7.848(R)|Clk_BUFGP         |   0.000|
+Hola<27>    |    8.253(R)|Clk_BUFGP         |   0.000|
+Hola<28>    |    8.104(R)|Clk_BUFGP         |   0.000|
+Hola<29>    |    7.775(R)|Clk_BUFGP         |   0.000|
+Hola<30>    |    8.035(R)|Clk_BUFGP         |   0.000|
+Hola<31>    |    8.315(R)|Clk_BUFGP         |   0.000|
+Salida<0>   |   30.314(R)|Clk_BUFGP         |   0.000|
+Salida<1>   |   31.547(R)|Clk_BUFGP         |   0.000|
+Salida<2>   |   29.288(R)|Clk_BUFGP         |   0.000|
+Salida<3>   |   29.284(R)|Clk_BUFGP         |   0.000|
+Salida<4>   |   29.278(R)|Clk_BUFGP         |   0.000|
+Salida<5>   |   28.640(R)|Clk_BUFGP         |   0.000|
+Salida<6>   |   33.353(R)|Clk_BUFGP         |   0.000|
+Salida<7>   |   31.486(R)|Clk_BUFGP         |   0.000|
+Salida<8>   |   31.393(R)|Clk_BUFGP         |   0.000|
+Salida<9>   |   31.135(R)|Clk_BUFGP         |   0.000|
+Salida<10>  |   30.925(R)|Clk_BUFGP         |   0.000|
+Salida<11>  |   33.080(R)|Clk_BUFGP         |   0.000|
+Salida<12>  |   32.894(R)|Clk_BUFGP         |   0.000|
+Salida<13>  |   31.851(R)|Clk_BUFGP         |   0.000|
+Salida<14>  |   34.029(R)|Clk_BUFGP         |   0.000|
+Salida<15>  |   31.815(R)|Clk_BUFGP         |   0.000|
+Salida<16>  |   31.225(R)|Clk_BUFGP         |   0.000|
+Salida<17>  |   30.775(R)|Clk_BUFGP         |   0.000|
+Salida<18>  |   33.614(R)|Clk_BUFGP         |   0.000|
+Salida<19>  |   33.061(R)|Clk_BUFGP         |   0.000|
+Salida<20>  |   30.043(R)|Clk_BUFGP         |   0.000|
+Salida<21>  |   30.429(R)|Clk_BUFGP         |   0.000|
+Salida<22>  |   32.939(R)|Clk_BUFGP         |   0.000|
+Salida<23>  |   30.191(R)|Clk_BUFGP         |   0.000|
+Salida<24>  |   33.237(R)|Clk_BUFGP         |   0.000|
+Salida<25>  |   30.625(R)|Clk_BUFGP         |   0.000|
+Salida<26>  |   33.485(R)|Clk_BUFGP         |   0.000|
+Salida<27>  |   33.020(R)|Clk_BUFGP         |   0.000|
+Salida<28>  |   34.284(R)|Clk_BUFGP         |   0.000|
+Salida<29>  |   32.629(R)|Clk_BUFGP         |   0.000|
+Salida<30>  |   33.676(R)|Clk_BUFGP         |   0.000|
+Salida<31>  |   32.839(R)|Clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |   28.630|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Rst            |Salida<0>      |   26.422|
+Rst            |Salida<1>      |   26.895|
+Rst            |Salida<2>      |   25.915|
+Rst            |Salida<3>      |   25.926|
+Rst            |Salida<4>      |   25.226|
+Rst            |Salida<5>      |   25.133|
+Rst            |Salida<6>      |   29.895|
+Rst            |Salida<7>      |   28.139|
+Rst            |Salida<8>      |   27.391|
+Rst            |Salida<9>      |   26.632|
+Rst            |Salida<10>     |   26.893|
+Rst            |Salida<11>     |   27.495|
+Rst            |Salida<12>     |   27.786|
+Rst            |Salida<13>     |   25.918|
+Rst            |Salida<14>     |   27.652|
+Rst            |Salida<15>     |   26.868|
+Rst            |Salida<16>     |   25.953|
+Rst            |Salida<17>     |   25.754|
+Rst            |Salida<18>     |   27.181|
+Rst            |Salida<19>     |   26.012|
+Rst            |Salida<20>     |   25.588|
+Rst            |Salida<21>     |   26.246|
+Rst            |Salida<22>     |   27.879|
+Rst            |Salida<23>     |   26.009|
+Rst            |Salida<24>     |   26.120|
+Rst            |Salida<25>     |   26.355|
+Rst            |Salida<26>     |   27.087|
+Rst            |Salida<27>     |   27.593|
+Rst            |Salida<28>     |   28.629|
+Rst            |Salida<29>     |   27.616|
+Rst            |Salida<30>     |   27.345|
+Rst            |Salida<31>     |   26.927|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Nov 15 17:01:44 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 581 MB
+
+
+

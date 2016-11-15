@@ -57,7 +57,7 @@ begin
 		when "001001" => AluResult <= A and B;
 		when "001010" => AluResult <= A and not(B);
 		when "001011" => AluResult <= A and not(B);
-		when "001100" => AluResult <= A or B;
+		when "001100" => AluResult <= A nor B;
 		when "001101" => AluResult <= A or B;
 		when "001110" => AluResult <= A or not(B);
 		when "001111" => AluResult <= A or not(B);

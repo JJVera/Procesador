@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/utp/Desktop/Procesador/Procesadores/Tercero/Procesador.xst" -ofn "C:/Users/utp/Desktop/Procesador/Procesadores/Tercero/Procesador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Procesador.ngc Procesador.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Procesador_map.ncd Procesador.ngd Procesador.pcf 
+par -w -intstyle ise -ol high -t 1 Procesador_map.ncd Procesador.ncd Procesador.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Procesador.twx Procesador.ncd -o Procesador.twr Procesador.pcf 
