@@ -44,7 +44,7 @@ ARCHITECTURE behavior OF tb_Procesador IS
          Clk : IN  std_logic;
          Rst : IN  std_logic;
          Salida : OUT  std_logic_vector(31 downto 0);
-         Hola : OUT  std_logic_vector(31 downto 0)
+         Direccion : OUT  std_logic_vector(31 downto 0)
         );
     END COMPONENT;
     
@@ -55,7 +55,7 @@ ARCHITECTURE behavior OF tb_Procesador IS
 
  	--Outputs
    signal Salida : std_logic_vector(31 downto 0);
-   signal Hola : std_logic_vector(31 downto 0);
+   signal Direccion : std_logic_vector(31 downto 0);
 
    -- Clock period definitions
    constant Clk_period : time := 20 ns;
@@ -67,7 +67,7 @@ BEGIN
           Clk => Clk,
           Rst => Rst,
           Salida => Salida,
-          Hola => Hola
+          Direccion => Direccion
         );
 
    -- Clock process definitions

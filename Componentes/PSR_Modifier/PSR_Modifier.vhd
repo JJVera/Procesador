@@ -32,7 +32,8 @@ use IEEE.STD_LOGIC_unsigned.ALL;
 --use UNISIM.VComponents.all;
 
 entity PSR_Modifier is
-    Port ( crs1 : in  STD_LOGIC_VECTOR (31 downto 0);
+    Port ( Rst : in STD_LOGIC;
+			  crs1 : in  STD_LOGIC_VECTOR (31 downto 0);
            SalidaMux : in  STD_LOGIC_VECTOR (31 downto 0);
            AluOp : in  STD_LOGIC_VECTOR (5 downto 0);
            AluResult : in  STD_LOGIC_VECTOR (31 downto 0);
@@ -44,6 +45,9 @@ architecture Behavioral of PSR_Modifier is
 begin
 	process(Crs1, SalidaMux, AluOp, AluResult)
 	begin
+		if(Rst = '1') then
+			NZVC <= "0000";
+		end if;
 		--ADDcc y ADDXcc
 		if(AluOp = "000001" or AluOp = "000011") then
 			NZVC(3) <= AluResult(31);

@@ -79,6 +79,7 @@ architecture Behavioral of Procesador is
 
 	COMPONENT PSR_Modifier
 	PORT(
+		Rst : IN std_logic;
 		crs1 : IN std_logic_vector(31 downto 0);
 		SalidaMux : IN std_logic_vector(31 downto 0);
 		AluOp : IN std_logic_vector(5 downto 0);
@@ -90,6 +91,7 @@ architecture Behavioral of Procesador is
 	COMPONENT PSR
 	PORT(
 		Clk : IN std_logic;
+		Rst : IN std_logic;
 		NZVC : IN std_logic_vector(3 downto 0);
 		ncwp : IN std_logic;          
 		cwp : OUT std_logic;
@@ -222,6 +224,7 @@ begin
 	);
 
 	Inst_PSR_Modifier: PSR_Modifier PORT MAP(
+		Rst => Rst,
 		crs1 => ConRS1,
 		SalidaMux => SalidaMux,
 		AluOp => EntradaAlu,
@@ -231,6 +234,7 @@ begin
 	
 		Inst_PSR: PSR PORT MAP(
 		Clk => Clk,
+		Rst => Rst,
 		NZVC => icc,
 		ncwp => SalidaWin,
 		cwp => SalidaPSR,

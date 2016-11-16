@@ -35,7 +35,7 @@ entity Procesador is
     Port ( Clk : in  STD_LOGIC;
            Rst : in  STD_LOGIC;
            Salida : out  STD_LOGIC_VECTOR (31 downto 0);
-           Hola : out  STD_LOGIC_VECTOR (31 downto 0));
+           Direccion : out  STD_LOGIC_VECTOR (31 downto 0));
 end Procesador;
 
 architecture Behavioral of Procesador is
@@ -150,6 +150,7 @@ architecture Behavioral of Procesador is
 	
 	COMPONENT PSR_Modifier
 	PORT(
+		Rst :IN std_logic;
 		crs1 : IN std_logic_vector(31 downto 0);
 		SalidaMux : IN std_logic_vector(31 downto 0);
 		AluOp : IN std_logic_vector(5 downto 0);
@@ -161,6 +162,7 @@ architecture Behavioral of Procesador is
 	COMPONENT PSR
 	PORT(
 		Clk : IN std_logic;
+		Rst : IN std_logic;
 		NZVC : IN std_logic_vector(3 downto 0);
 		ncwp : IN std_logic;          
 		cwp : OUT std_logic;
@@ -326,6 +328,7 @@ begin
 	);
 	
 	Inst_PSR_Modifier: PSR_Modifier PORT MAP(
+		Rst => Rst,
 		crs1 => cRs1,
 		SalidaMux => Operando,
 		AluOp => AluOp,
@@ -335,6 +338,7 @@ begin
 	
 	Inst_PSR: PSR PORT MAP(
 		Clk => Clk,
+		Rst => Rst,
 		NZVC => icc,
 		ncwp => NCWP,
 		cwp => CWP,
@@ -369,7 +373,7 @@ begin
 	);
 
 	Salida <= DatatoReg;
-	Hola <= Adress;
+	Direccion <= Adress;
 	
 end Behavioral;
 

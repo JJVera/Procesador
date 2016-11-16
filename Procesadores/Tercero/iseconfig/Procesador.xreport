@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <ImplementationReportsDirectory>C:/Users/utp/Desktop/Procesador/Procesadores/Tercero\</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Vera96/Desktop/Arquitectura/Procesadores/Tercero\</ImplementationReportsDirectory>
   <ModuleName>Procesador</ModuleName>
-  <DateModified>2016-11-15T16:45:31</DateModified>
-  <SavedFilePath>C:/Users/utp/Desktop/Procesador/Procesadores/Tercero/iseconfig/Procesador.xreport</SavedFilePath>
+  <DateModified>2016-11-16T13:09:15</DateModified>
+  <SavedFilePath>C:/Users/Vera96/Desktop/Arquitectura/Procesadores/Tercero/iseconfig/Procesador.xreport</SavedFilePath>
   <DateInitialized>2016-11-10T19:19:51</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
